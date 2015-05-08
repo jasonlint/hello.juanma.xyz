@@ -89,10 +89,10 @@ a:active,
 a:focus,
 a:link,
 a:visited {
-  color: #000000;
+  color: #ffffff;
 }
 a:hover {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 h1,
@@ -108,7 +108,7 @@ h6 {
   -webkit-box-shadow: none;
 }
 html {
-  background-color: #000000;
+  background-color: #ffffff;
   font-size: 62.5%;
   /* Sets up the Base 10 stuff */
 
@@ -116,8 +116,8 @@ html {
 html body {
   font-family: 'Libre Baskerville', serif;
   display: none;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
 }
 html body .cover .cover-wrapper {
   margin-left: auto;
@@ -125,5 +125,5 @@ html body .cover .cover-wrapper {
   width: 320px;
 }
 html body .mastfoot {
-  color: #000000;
+  color: #ffffff;
 }

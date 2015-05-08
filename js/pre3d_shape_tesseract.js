@@ -48,9 +48,9 @@ window.addEventListener('load', function() {
   // We need to rebuild the normals after extruding the vertices.
   // Pre3d.ShapeUtils.rebuildMeta(shape);
   renderer.draw_overdraw = false;
-  renderer.fill_rgba = new Pre3d.RGBA(0x00/255, 0x00/255, 0x00/255, 0.1);
+  renderer.fill_rgba = new Pre3d.RGBA(0xff/255, 0xff/255, 0xff/255, 0.1);
   renderer.ctx.lineWidth = 1;
-  renderer.stroke_rgba = new Pre3d.RGBA(0x00/255, 0x00/255, 0x00/255, 0.1);
+  renderer.stroke_rgba = new Pre3d.RGBA(0xff/255, 0xff/255, 0xff/255, 0.1);
 
   function setTransform(x, y) {
     var ct = renderer.camera.transform;
