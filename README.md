@@ -1,2 +1,2 @@
-hello.juanma.xyz
+juanma.xyz
 ================
