@@ -25,17 +25,8 @@ html {
     }
 
     > .page {
+      .clearfix;
       background-color: @White;
-
-      &:after,
-      &:before {
-        content: "";
-        display: table;
-      }
-
-      &:after {
-        clear: both;
-      }
 
       > .container,
       > .container-fluid {
