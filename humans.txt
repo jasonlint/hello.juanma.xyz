@@ -1,0 +1,73 @@
+    __ _____ _____ _____ _____ _____
+ __|  |  |  |  _  |   | |     |  _  |
+|  |  |  |  |     | | | | | | |     |
+|_____|_____|_____|_____|_____|__|__|
+|  _  |   __| __  |   __|__   |
+|   __|   __|    -|   __|   __|
+|_____|_____|_____|_____|_____|_____ _____
+| __  |  _  | __  |  _  |   __|     |     |
+|    -|     | __ -|     |__   |   --|  |  |
+|__|__|__|__|_____|__|__|_____|_____|_____|
+
+The human, technology & tools behind this site.
+
+
+
+ABOUT
+-----
+
+Name: Juanma Perez Rabasco
+Location: Barcelona
+
+
+CONTACT
+-------
+
+Phone: +34 611 470 590
+Email: hello@juanma.xyz
+Public Key: 0x3b475767
+Fingerprint: ACC0 E471 BF1F FC3B F3DB C5CC 7C67 3DD4 3B47 5767
+
+
+SOCIAL
+------
+
+Instagram: instagram.com/aikijuanma
+Miiverse: miiverse.nintendo.net/users/aikijuanma
+Steam: steamcommunity.com/id/aikijuanma
+Twitter: twitter.com/aikijuanma
+
+
+PURPOSE
+-------
+
+I write [code], make things with pixels, and tweak systems.
+
+
+TECHNOLOGY
+----------
+
+- Bootstrap (getbootstrap.com)
+- GitHub (github.com)
+- Google Fonts(fonts.google.com)
+
+
+TOOLS
+-----
+
+- Atom (atom.io)
+- Colibri (colibri.opqr.co)
+- Hyper (hyper.is)
+
+
+FONTS
+-----
+
+- Roboto (github.com/google/roboto)
+- Roboto Mono (github.com/google/roboto)
+
+
+LICENSE
+-------
+
+GNU General Public License v3.0 (github.com/jasonlint/juanma.xyz/blob/gh-pages/LICENSE)

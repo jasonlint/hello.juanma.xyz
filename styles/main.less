@@ -1,0 +1,211 @@
+// out: main.css, sourcemap: false, compress: true
+
+@import url('base.less');
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+html {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+
+  body {
+    .regular;
+    background-color: fadeOut(@Black, 90%);
+    color: @Black;
+    height: auto; width: 100%;
+    margin: 0;
+    padding: 0;
+
+    a {
+      .transition;
+    }
+
+    > .page {
+      background-color: @White;
+
+      &:after,
+      &:before {
+        content: "";
+        display: table;
+      }
+
+      &:after {
+        clear: both;
+      }
+
+      > .container,
+      > .container-fluid {
+        padding-right: 0; padding-left: 0;
+
+        > section#about {
+          height: auto; width: 90%;
+          margin: 0 auto;
+          padding: 0;
+
+          > .container,
+          > .container-fluid {
+            padding-right: 0; padding-left: 0;
+
+            > .row {
+              margin-right: 0; margin-left: 0;
+
+              > div {
+                margin-right: 0; margin-left: 0;
+                padding-right: 0; padding-left: 0;
+
+                h2 {
+                  .mono; .regular;
+                  font-size: 1rem * 3;
+                  line-height: (1rem * 3) * 2;
+                  margin: 0;
+                  padding: 0;
+                }
+
+                p {
+                  .mono; .regular;
+                  font-size: 1rem;
+                  line-height: 1rem * 1.75;
+                  margin: 0 0 1.75rem 0;
+                  padding: 0;
+
+                  a {
+                    color: @Black;
+                    text-decoration: none;
+
+                    &:active,
+                    &:visited {
+                      color: @Black;
+                      text-decoration: none;
+                    }
+
+                    &:focus,
+                    &:hover {
+                      color: @DeepLyonsBlue;
+                      text-decoration: none;
+                    }
+                  }
+
+                  b {
+                    .bold;
+                  }
+                }
+
+                time {
+                  .show;
+                  .mono; .regular;
+                  color: fadeOut(@Black, 20%);
+                  font-size: 1rem / 1.333;
+                  line-height: (1rem / 1.333) * 2;
+                  margin: 0 0 (1rem / 1.333) * 8 0;
+                  padding: 0;
+                  text-transform: uppercase;
+                }
+              }
+            }
+          }
+        }
+
+        > footer {
+          background-color: fadeOut(@Black, 90%);
+          height: auto; width: 100%;
+          margin: 0;
+          padding: 1.75rem * 1.5 5%;
+
+          > .container,
+          > .container-fluid {
+            padding-right: 0; padding-left: 0;
+
+            > .row {
+              margin-right: 0; margin-left: 0;
+
+              > div {
+                margin-right: 0; margin-left: 0;
+                padding-right: 0; padding-left: 0;
+
+                address {
+                  .sans; .light;
+                  color: fadeOut(@Black, 60%);
+                  font-size: 1rem / 1.333;
+                  height: auto; width: 100%;
+                  line-height: (1rem / 1.333) * 1.5;
+                  margin: 0;
+                  padding-right: 0; padding-left: 0;
+                  text-align: center;
+
+                  em {
+                    .normal;
+                    .show;
+                    height: auto; width: 100%;
+
+                    a {
+                      color: fadeOut(@Black, 60%);
+                      text-decoration: none;
+
+                      &:active,
+                      &:visited {
+                        color: fadeOut(@Black, 60%);
+                        text-decoration: none;
+                      }
+
+                      &:focus,
+                      &:hover {
+                        color: fadeOut(@Black, 40%);
+                        text-decoration: none;
+                      }
+
+                      b {
+                        .medium;
+                      }
+                    }
+                  }
+                }
+
+                span {
+                  .regular;
+                  .show;
+                  height: auto; width: 100%;
+
+                  a {
+                    color: fadeOut(@Black, 60%);
+                    text-decoration: none;
+
+                    &:active,
+                    &:visited {
+                      color: fadeOut(@Black, 60%);
+                      text-decoration: none;
+                    }
+
+                    &:focus,
+                    &:hover {
+                      color: fadeOut(@Black, 40%);
+                      text-decoration: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+@import url('xs.less');
+@import url('sm.less');
+@import url('md.less');
+@import url('lg.less');
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
