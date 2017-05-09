@@ -1,40 +1,42 @@
-# The human, technology, and tools behind this site.
 
-## About
+The human, technology, and tools behind this site.
+-
+
+ABOUT
 Name: Juanma Perez Rabasco
 Location: Barcelona, ES
 
-## Contact
+CONTACT
 Phone: +34 611 470 590
 Email: hello@juanma.xyz
 Public Key: 0x3b475767
 Fingerprint: ACC0 E471 BF1F FC3B F3DB C5CC 7C67 3DD4 3B47 5767
 
-## Social
+SOCIAL
 Instagram: instagram.com/aikijuanma
 Miiverse: miiverse.nintendo.net/users/aikijuanma
 Steam: steamcommunity.com/id/aikijuanma
 Twitter: twitter.com/aikijuanma
 
-## Purpose
+PURPOSE
 I write [code], make things with pixels, and tweak systems.
 
-## Support
+SUPPORT
 Contact me for collaborations and work!
 
-## Technology
+TECHNOLOGY
 Bootstrap (getbootstrap.com)
 GitHub (github.com)
 Google Fonts (fonts.google.com)
 
-## Tools
+TOOLS
 Atom (atom.io)
 Colibri (colibri.opqr.co)
 Hyper (hyper.is)
 
-## Fonts
+FONTS
 Roboto (github.com/google/roboto)
 Roboto Mono (github.com/google/roboto)
 
-## License
+LICENSE
 GNU General Public License v3.0 (github.com/jasonlint/juanma.xyz/blob/gh-pages/LICENSE)
