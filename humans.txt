@@ -7,7 +7,7 @@ Name: Juanma Perez Rabasco
 Location: Barcelona, ES
 
 CONTACT
-Phone: +34 611 470 590
+Phone: +34611470590
 Email: hello@juanma.xyz
 Public Key: 0x3b475767
 Fingerprint: ACC0 E471 BF1F FC3B F3DB C5CC 7C67 3DD4 3B47 5767
