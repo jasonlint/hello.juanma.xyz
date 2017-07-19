@@ -3,6 +3,12 @@
 .mono { font-family: 'Roboto Mono', monospace; }
 .sans { font-family: 'Roboto', sans-serif; }
 
+// .kaku { font-family: "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "游ゴシック", YuGothic, "ＭＳ Ｐゴシック", "MS PGothic", "ＭＳ ゴシック", "MS Gothic", sans, sans-serif; }
+
+// .micho { font-family: "HiraMinPro-W3", "Hiragino Mincho Pro W3", "Hiragino Mincho Pro", "ヒラギノ明朝 Pro W3", "游明朝", YuMincho, "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", "MS Mincho", serif; }
+
+.mplus1p { font-family: "Mplus 1p", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "游ゴシック", YuGothic, "ＭＳ Ｐゴシック", "MS PGothic", "ＭＳ ゴシック", "MS Gothic", sans, sans-serif; }
+
 .thin { font-weight: 100; }
 .extra_light { font-weight: 200; }
 .light { font-weight: 300; }
@@ -21,11 +27,47 @@
 @154: #ffffff; @White: #ffffff;
 @159: #000000; @Black: #000000;
 
+.vertical-text {
+  -webkit-text-orientation: upright;
+     -moz-text-orientation: upright;
+      -ms-text-orientation: upright;
+          text-orientation: upright;
+
+  -webkit-writing-mode: vertical-rl;
+     -moz-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl; // old syntax. IE
+      -ms-writing-mode: vertical-rl;
+          writing-mode: vertical-rl; // new syntax
+
+  -webkit-writing-mode: vertical-rl;
+     -moz-writing-mode: vertical-rl;
+      -ms-writing-mode: vertical-rl;
+          writing-mode: vertical-rl;
+}
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
 * {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke: 1px transparent;
   text-shadow: 0 1px 0 rgba(0,0,0,0.01);
+}
+
+.clearfix() {
+
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+
+  &:after {
+    clear: both;
+  }
 }
 
 .fadeIn {
@@ -138,28 +180,4 @@
 
 .visible {
   visibility: visible;
-}
-
-/**
- * Clearfix
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    contenteditable attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that are clearfixed.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- *
- * @source http://nicolasgallagher.com/micro-clearfix-hack/
- */
-.clearfix() {
-  &:before,
-  &:after {
-    content: " "; // 1
-    display: table; // 2
-  }
-  &:after {
-    clear: both;
-  }
 }

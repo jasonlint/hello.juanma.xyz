@@ -39,4 +39,4 @@ Roboto (github.com/google/roboto)
 Roboto Mono (github.com/google/roboto)
 
 LICENSE
-GNU General Public License v3.0 (github.com/jasonlint/juanma.xyz/blob/gh-pages/LICENSE)
+GNU General Public License v3.0 (github.com/aikijuanma/juanma.xyz/blob/gh-pages/LICENSE)
