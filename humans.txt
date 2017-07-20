@@ -10,7 +10,7 @@ CONTACT
 Phone: +34611470590
 Email: hello@juanma.xyz
 Public Key: 0x3b475767
-Fingerprint: ACC0 E471 BF1F FC3B F3DB C5CC 7C67 3DD4 3B47 5767
+Fingerprint: E2DD 88B5 7C65 47B4 C3A4  959B 5A75 8823 8476 115C
 
 SOCIAL
 Instagram: instagram.com/aikijuanma
