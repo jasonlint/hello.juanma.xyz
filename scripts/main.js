@@ -5,37 +5,6 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  function changeLang() {
-
-    $('a.langCa').on('click', function(e) {
-      e.preventDefault();
-      $('html').attr('lang', 'ca');
-      $('section.langEn, section.langEs, section.langJa').removeClass('show').addClass('hide');
-      $('section.langCa').removeClass('hide').addClass('show');
-    });
-
-    $('a.langEn').on('click', function(e) {
-      e.preventDefault();
-      $('html').attr('lang', 'en');
-      $('section.langCa, section.langEs, section.langJa').removeClass('show').addClass('hide');
-      $('section.langEn').removeClass('hide').addClass('show');
-    });
-
-    $('a.langEs').on('click', function(e) {
-      e.preventDefault();
-      $('html').attr('lang', 'es');
-      $('section.langCa, section.langEn, section.langJa').removeClass('show').addClass('hide');
-      $('section.langEs').removeClass('hide').addClass('show');
-    });
-
-    $('a.langJa').on('click', function(e) {
-      e.preventDefault();
-      $('html').attr('lang', 'ja');
-      $('section.langCa, section.langEn, section.langEs').removeClass('show').addClass('hide');
-      $('section.langJa').removeClass('hide').addClass('show');
-    });
-  };
-
   function replaceAllSvg() {
 
     // Replace all SVG images with inline SVG using jQuery
@@ -67,12 +36,6 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-///////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-
-changeLang();
 //replaceAllSvg();
 
 ////////////////////////////////////////////////////////////////
