@@ -14,6 +14,7 @@ Fingerprint: E2DD 88B5 7C65 47B4 C3A4  959B 5A75 8823 8476 115C
 
 SOCIAL
 Instagram: instagram.com/aikijuanma
+Keybase: keybase.io/aikijuanma
 Miiverse: miiverse.nintendo.net/users/aikijuanma
 Steam: steamcommunity.com/id/aikijuanma
 Twitter: twitter.com/aikijuanma
@@ -35,8 +36,8 @@ Colibri (colibri.opqr.co)
 Hyper (hyper.is)
 
 FONTS
-Roboto (github.com/google/roboto)
-Roboto Mono (github.com/google/roboto)
+Source Code Pro (adobe-fonts.github.io/source-code-pro)
+Source Sans Pro (adobe-fonts.github.io/source-sans-pro)
 
 LICENSE
 GNU General Public License v3.0 (github.com/aikijuanma/juanma.xyz/blob/gh-pages/LICENSE)
