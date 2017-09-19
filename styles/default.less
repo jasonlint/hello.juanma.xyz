@@ -50,8 +50,8 @@ html {
 
                 h2 {
                   .source_sans_pro; .regular;
-                  font-size: 1rem * 3;
-                  line-height: (1rem * 3) * 2;
+                  font-size: 1rem * 2.5;
+                  line-height: (1rem * 2.5) * 2;
                   margin: 0;
                   padding: 0;
                 }
@@ -59,16 +59,39 @@ html {
                 p {
                   .regular;
                   font-size: 1rem;
-                  line-height: 1rem * 1.75;
+                  line-height: 1rem * 1.50;
                   margin: 0 0 1.75rem 0;
                   padding: 0;
 
                   a {
+                    .transition;
                     color: @Black;
                     text-decoration: none;
 
-                    &[href*="//"]:not([href*="http://0.0.0.0:8000"]) {
-                      .kaku;
+                    &[href*="//"]:not([href*="juanma.xyz"]) {
+
+                      // &:after {
+                      //   .source_code_pro; .black;
+                      //   content: "↗";
+                      //   display: inline-block;
+                      //   font-size: 16px / 1.5;
+                      //   line-height: (16px / 1.5) * 2;
+                      //   margin-left: 2px;
+                      //   vertical-align: top;
+                      // }
+
+                      > .oi {
+                        display: inline-block;
+                        font-size: 16px / 1.5;
+                        margin: 0 16px / 8;
+                        vertical-align: top;
+
+                        -webkit-transform: rotate(45deg);
+                           -moz-transform: rotate(45deg);
+                             -o-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                                transform: rotate(45deg);
+                      }
                     }
 
                     &:active,
