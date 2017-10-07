@@ -12,221 +12,230 @@ html {
   padding: 0;
 
   body {
-    .source_code_pro;
-    background-color: fadeOut(@Black, 90%);
-    color: @Black;
-    height: auto; width: 100%;
     margin: 0;
     padding: 0;
 
-    a {
-      .transition;
-      cursor: pointer;
-    }
+    .page {
 
-    > .page {
-      .clearfix;
-      background-color: @White;
-
-      > .container,
-      > .container-fluid {
+      .container-fluid {
         padding-right: 0; padding-left: 0;
 
-        > section {
-          height: auto; width: 90%;
-          margin: 0 auto;
-          padding: 0;
+        > h1 {
+          .show;
+          color: @Black;
+          font-size: 16px * 1.5;
+          letter-spacing: -1px;
+          line-height: 16px * 1.5;
+          margin: 0;
+          padding: 16px;
+          position: fixed;
 
-          > .container,
-          > .container-fluid {
-            padding-right: 0; padding-left: 0;
+          > span {
 
-            > .row {
-              margin-right: 0; margin-left: 0;
+            &:nth-of-type(1) {
+              .NittiNormal;
+            }
 
-              > div {
-                margin-right: 0; margin-left: 0;
-                padding-right: 0; padding-left: 0;
+            &:nth-of-type(2) {
+              .NittiLight;
+            }
+          }
+        }
 
-                h2 {
-                  .source_sans_pro; .regular;
-                  font-size: 1rem * 2.5;
-                  line-height: (1rem * 2.5) * 2;
-                  margin: 0;
-                  padding: 0;
-                }
+        > article {
+          .show;
+          height: 480px; width: 100%;
+          line-height: 480px;
+          padding-right: (480px - (480px - (16px * 10))) / 2; padding-left: (480px - (480px - (16px * 10))) / 2;
+          text-align: right;
 
-                p {
-                  .regular;
-                  font-size: 1rem;
-                  line-height: 1rem * 1.50;
-                  margin: 0 0 1.75rem 0;
-                  padding: 0;
+          > figure {
+            display: inline-block;
+            margin: 0;
+            overflow: hidden;
+            text-align: center;
+            vertical-align: middle;
 
-                  a {
-                    .transition;
-                    color: @Black;
-                    text-decoration: none;
+            &:hover {
 
-                    &[href*="//"]:not([href*="juanma.xyz"]) {
+              > img {
+                -webkit-animation-play-state: running;
+                   -moz-animation-play-state: running;
+                    -ms-animation-play-state: running;
+                     -o-animation-play-state: running;
+                        animation-play-state: running;
+              }
+            }
 
-                      &:after {
-                        // .source_code_pro; .black;
-                        // content: "↗";
-                        // display: inline-block;
-                        // font-size: 16px / 1.5;
-                        // line-height: (16px / 1.5) * 2;
-                        // margin-left: 2px;
-                        // vertical-align: top;
-                      }
+            > img {
+              .show;
+              max-height: 480px - (16px * 10);
 
-                      &:hover {
-                        color: @DeepLyonsBlue;
-                        text-decoration: underline;
-                      }
+              -webkit-animation: showMe 0.8s linear infinite 0s forwards;
+                 -moz-animation: showMe 0.8s linear infinite 0s forwards;
+                  -ms-animation: showMe 0.8s linear infinite 0s forwards;
+                   -o-animation: showMe 0.8s linear infinite 0s forwards;
+                      animation: showMe 0.8s linear infinite 0s forwards;
 
-                      // > .oi {
-                      //   display: inline-block;
-                      //   font-size: 16px / 1.5;
-                      //   margin: 0 16px / 8;
-                      //   vertical-align: top;
-                      //
-                      //   -webkit-transform: rotate(45deg);
-                      //      -moz-transform: rotate(45deg);
-                      //        -o-transform: rotate(45deg);
-                      //       -ms-transform: rotate(45deg);
-                      //           transform: rotate(45deg);
-                      // }
-                    }
+              -webkit-animation-play-state: paused;
+                 -moz-animation-play-state: paused;
+                  -ms-animation-play-state: paused;
+                   -o-animation-play-state: paused;
+                      animation-play-state: paused;
 
-                    &:active,
-                    &:visited {
-                      color: @Black;
-                      text-decoration: none;
-                    }
+              &:nth-child(1) {
+                z-index: 9;
+              }
 
-                    &:focus,
-                    &:hover {
-                      color: @DeepLyonsBlue;
-                      text-decoration: none;
-                    }
-                  }
+              &:nth-child(2) {
+                z-index: 8;
 
-                  b {
-                    .semi_bold;
-                  }
-                }
+                -webkit-animation-delay: 0.1s;
+                   -moz-animation-delay: 0.1s;
+                    -ms-animation-delay: 0.1s;
+                     -o-animation-delay: 0.1s;
+                        animation-delay: 0.1s;
+              }
 
-                time {
-                  .show;
-                  .regular;
-                  color: fadeOut(@Black, 20%);
-                  font-size: 1rem / 1.333;
-                  line-height: (1rem / 1.333) * 2;
-                  margin: 0 0 (1rem / 1.333) * 8 0;
-                  padding: 0;
-                  text-transform: uppercase;
-                }
+              &:nth-child(3) {
+                z-index: 7;
+
+                -webkit-animation-delay: 0.2s;
+                   -moz-animation-delay: 0.2s;
+                    -ms-animation-delay: 0.2s;
+                     -o-animation-delay: 0.2s;
+                        animation-delay: 0.2s;
+              }
+
+              &:nth-child(4) {
+                z-index: 6;
+
+                -webkit-animation-delay: 0.3s;
+                   -moz-animation-delay: 0.3s;
+                    -ms-animation-delay: 0.3s;
+                     -o-animation-delay: 0.3s;
+                        animation-delay: 0.3s;
+              }
+
+              &:nth-child(5) {
+                z-index: 5;
+
+                -webkit-animation-delay: 0.4s;
+                   -moz-animation-delay: 0.4s;
+                    -ms-animation-delay: 0.4s;
+                     -o-animation-delay: 0.4s;
+                        animation-delay: 0.4s;
+              }
+
+              &:nth-child(6) {
+                z-index: 4;
+
+                -webkit-animation-delay: 0.5s;
+                   -moz-animation-delay: 0.5s;
+                    -ms-animation-delay: 0.5s;
+                     -o-animation-delay: 0.5s;
+                        animation-delay: 0.5s;
+              }
+
+              &:nth-child(7) {
+                z-index: 3;
+
+                -webkit-animation-delay: 0.6s;
+                   -moz-animation-delay: 0.6s;
+                    -ms-animation-delay: 0.6s;
+                     -o-animation-delay: 0.6s;
+                        animation-delay: 0.6s;
+              }
+
+              &:nth-child(8) {
+                z-index: 2;
+
+                -webkit-animation-delay: 0.7s;
+                   -moz-animation-delay: 0.7s;
+                    -ms-animation-delay: 0.7s;
+                     -o-animation-delay: 0.7s;
+                        animation-delay: 0.7s;
               }
             }
           }
         }
 
-        > footer {
-          background-color: fadeOut(@Black, 90%);
-          height: auto; width: 100%;
-          margin: 0;
-          padding: 1.75rem * 1.5 5%;
-
-          > .container,
-          > .container-fluid {
-            padding-right: 0; padding-left: 0;
-
-            > .row {
-              margin-right: 0; margin-left: 0;
-
-              > div {
-                margin-right: 0; margin-left: 0;
-                padding-right: 0; padding-left: 0;
-
-                address {
-                  .source_sans_pro; .light;
-                  color: fadeOut(@Black, 60%);
-                  font-size: 1rem / 1.333;
-                  height: auto; width: 100%;
-                  line-height: (1rem / 1.333) * 1.5;
-                  margin: 0;
-                  padding-right: 0; padding-left: 0;
-                  text-align: center;
-
-                  em {
-                    .normal;
-                    .show;
-                    height: auto; width: 100%;
-
-                    a {
-                      color: fadeOut(@Black, 60%);
-                      text-decoration: none;
-
-                      &:active,
-                      &:visited {
-                        color: fadeOut(@Black, 60%);
-                        text-decoration: none;
-                      }
-
-                      &:focus,
-                      &:hover {
-                        color: fadeOut(@Black, 40%);
-                        text-decoration: none;
-                      }
-
-                      b {
-                        .medium;
-                      }
-                    }
-                  }
-                }
-
-                span {
-                  .regular;
-                  .show;
-                  height: auto; width: 100%;
-
-                  a {
-                    color: fadeOut(@Black, 60%);
-                    text-decoration: none;
-
-                    &:active,
-                    &:visited {
-                      color: fadeOut(@Black, 60%);
-                      text-decoration: none;
-                    }
-
-                    &:focus,
-                    &:hover {
-                      color: fadeOut(@Black, 40%);
-                      text-decoration: none;
-                    }
-                  }
-                }
-              }
-            }
-          }
+        > aside {
         }
       }
     }
   }
 }
 
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////
+@-webkit-keyframes showMe {
+  0%    { visibility: visible; z-index: 99; }
+  12.5% { visibility: visible; z-index: 99; }
+  25%   { visibility: hidden; z-index: 0; }
+  100%  { visibility: hidden; z-index: 0; }
+}
 
-@import url('xs.less');
-@import url('sm.less');
-@import url('md.less');
-@import url('lg.less');
+@-moz-keyframes showMe {
+  0%    { visibility: visible; z-index: 99; }
+  12.5% { visibility: visible; z-index: 99; }
+  25%   { visibility: hidden; z-index: 0; }
+  100%  { visibility: hidden; z-index: 0; }
+}
+
+@-ms-keyframes showMe {
+  0%    { visibility: visible; z-index: 99; }
+  12.5% { visibility: visible; z-index: 99; }
+  25%   { visibility: hidden; z-index: 0; }
+  100%  { visibility: hidden; z-index: 0; }
+}
+
+@-o-keyframes showMe {
+  0%    { visibility: visible; z-index: 99; }
+  12.5% { visibility: visible; z-index: 99; }
+  25%   { visibility: hidden; z-index: 0; }
+  100%  { visibility: hidden; z-index: 0; }
+}
+
+@keyframes showMe {
+  0%    { visibility: visible; z-index: 99; }
+  12.5% { visibility: visible; z-index: 99; }
+  25%   { visibility: hidden; z-index: 0; }
+  100%  { visibility: hidden; z-index: 0; }
+}
+
+@-webkit-keyframes showMeTitle {
+  0%    { visibility: visible; z-index: 999; }
+  12.5% { visibility: visible; z-index: 999; }
+  25%   { visibility: hidden; z-index: 0; }
+  100%  { visibility: hidden; z-index: 0; }
+}
+
+@-moz-keyframes showMeTitle {
+  0%    { visibility: visible; z-index: 999; }
+  12.5% { visibility: visible; z-index: 999; }
+  25%   { visibility: hidden; z-index: 0; }
+  100%  { visibility: hidden; z-index: 0; }
+}
+
+@-ms-keyframes showMeTitle {
+  0%    { visibility: visible; z-index: 999; }
+  12.5% { visibility: visible; z-index: 999; }
+  25%   { visibility: hidden; z-index: 0; }
+  100%  { visibility: hidden; z-index: 0; }
+}
+
+@-o-keyframes showMeTitle {
+  0%    { visibility: visible; z-index: 999; }
+  12.5% { visibility: visible; z-index: 999; }
+  25%   { visibility: hidden; z-index: 0; }
+  100%  { visibility: hidden; z-index: 0; }
+}
+
+@keyframes showMeTitle {
+  0%    { visibility: visible; z-index: 999; }
+  12.5% { visibility: visible; z-index: 999; }
+  25%   { visibility: hidden; z-index: 0; }
+  100%  { visibility: hidden; z-index: 0; }
+}
 
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
