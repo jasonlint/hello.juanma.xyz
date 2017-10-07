@@ -1,0 +1,243 @@
+// out: default.css, sourcemap: false, compress: true
+
+@import url('base.less');
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+
+html {
+  margin: 0;
+  padding: 0;
+
+  body {
+    margin: 0;
+    padding: 0;
+
+    .page {
+
+      .container-fluid {
+        padding-right: 0; padding-left: 0;
+
+        > h1 {
+          .show;
+          color: @Black;
+          font-size: 16px * 1.5;
+          letter-spacing: -1px;
+          line-height: 16px * 1.5;
+          margin: 0;
+          padding: 16px;
+          position: fixed;
+
+          > span {
+
+            &:nth-of-type(1) {
+              .NittiNormal;
+            }
+
+            &:nth-of-type(2) {
+              .NittiLight;
+            }
+          }
+        }
+
+        > article {
+          .show;
+          height: 480px; width: 100%;
+          line-height: 480px;
+          padding-right: (480px - (480px - (16px * 10))) / 2; padding-left: (480px - (480px - (16px * 10))) / 2;
+          text-align: right;
+
+          > figure {
+            display: inline-block;
+            margin: 0;
+            overflow: hidden;
+            text-align: center;
+            vertical-align: middle;
+
+            &:hover {
+
+              > img {
+                -webkit-animation-play-state: running;
+                   -moz-animation-play-state: running;
+                    -ms-animation-play-state: running;
+                     -o-animation-play-state: running;
+                        animation-play-state: running;
+              }
+            }
+
+            > img {
+              .show;
+              max-height: 480px - (16px * 10);
+
+              -webkit-animation: showMe 0.8s linear infinite 0s forwards;
+                 -moz-animation: showMe 0.8s linear infinite 0s forwards;
+                  -ms-animation: showMe 0.8s linear infinite 0s forwards;
+                   -o-animation: showMe 0.8s linear infinite 0s forwards;
+                      animation: showMe 0.8s linear infinite 0s forwards;
+
+              -webkit-animation-play-state: paused;
+                 -moz-animation-play-state: paused;
+                  -ms-animation-play-state: paused;
+                   -o-animation-play-state: paused;
+                      animation-play-state: paused;
+
+              &:nth-child(1) {
+                z-index: 9;
+              }
+
+              &:nth-child(2) {
+                z-index: 8;
+
+                -webkit-animation-delay: 0.1s;
+                   -moz-animation-delay: 0.1s;
+                    -ms-animation-delay: 0.1s;
+                     -o-animation-delay: 0.1s;
+                        animation-delay: 0.1s;
+              }
+
+              &:nth-child(3) {
+                z-index: 7;
+
+                -webkit-animation-delay: 0.2s;
+                   -moz-animation-delay: 0.2s;
+                    -ms-animation-delay: 0.2s;
+                     -o-animation-delay: 0.2s;
+                        animation-delay: 0.2s;
+              }
+
+              &:nth-child(4) {
+                z-index: 6;
+
+                -webkit-animation-delay: 0.3s;
+                   -moz-animation-delay: 0.3s;
+                    -ms-animation-delay: 0.3s;
+                     -o-animation-delay: 0.3s;
+                        animation-delay: 0.3s;
+              }
+
+              &:nth-child(5) {
+                z-index: 5;
+
+                -webkit-animation-delay: 0.4s;
+                   -moz-animation-delay: 0.4s;
+                    -ms-animation-delay: 0.4s;
+                     -o-animation-delay: 0.4s;
+                        animation-delay: 0.4s;
+              }
+
+              &:nth-child(6) {
+                z-index: 4;
+
+                -webkit-animation-delay: 0.5s;
+                   -moz-animation-delay: 0.5s;
+                    -ms-animation-delay: 0.5s;
+                     -o-animation-delay: 0.5s;
+                        animation-delay: 0.5s;
+              }
+
+              &:nth-child(7) {
+                z-index: 3;
+
+                -webkit-animation-delay: 0.6s;
+                   -moz-animation-delay: 0.6s;
+                    -ms-animation-delay: 0.6s;
+                     -o-animation-delay: 0.6s;
+                        animation-delay: 0.6s;
+              }
+
+              &:nth-child(8) {
+                z-index: 2;
+
+                -webkit-animation-delay: 0.7s;
+                   -moz-animation-delay: 0.7s;
+                    -ms-animation-delay: 0.7s;
+                     -o-animation-delay: 0.7s;
+                        animation-delay: 0.7s;
+              }
+            }
+          }
+        }
+
+        > aside {
+        }
+      }
+    }
+  }
+}
+
+@-webkit-keyframes showMe {
+  0%    { visibility: visible; z-index: 99; }
+  12.5% { visibility: visible; z-index: 99; }
+  25%   { visibility: hidden; z-index: 0; }
+  100%  { visibility: hidden; z-index: 0; }
+}
+
+@-moz-keyframes showMe {
+  0%    { visibility: visible; z-index: 99; }
+  12.5% { visibility: visible; z-index: 99; }
+  25%   { visibility: hidden; z-index: 0; }
+  100%  { visibility: hidden; z-index: 0; }
+}
+
+@-ms-keyframes showMe {
+  0%    { visibility: visible; z-index: 99; }
+  12.5% { visibility: visible; z-index: 99; }
+  25%   { visibility: hidden; z-index: 0; }
+  100%  { visibility: hidden; z-index: 0; }
+}
+
+@-o-keyframes showMe {
+  0%    { visibility: visible; z-index: 99; }
+  12.5% { visibility: visible; z-index: 99; }
+  25%   { visibility: hidden; z-index: 0; }
+  100%  { visibility: hidden; z-index: 0; }
+}
+
+@keyframes showMe {
+  0%    { visibility: visible; z-index: 99; }
+  12.5% { visibility: visible; z-index: 99; }
+  25%   { visibility: hidden; z-index: 0; }
+  100%  { visibility: hidden; z-index: 0; }
+}
+
+@-webkit-keyframes showMeTitle {
+  0%    { visibility: visible; z-index: 999; }
+  12.5% { visibility: visible; z-index: 999; }
+  25%   { visibility: hidden; z-index: 0; }
+  100%  { visibility: hidden; z-index: 0; }
+}
+
+@-moz-keyframes showMeTitle {
+  0%    { visibility: visible; z-index: 999; }
+  12.5% { visibility: visible; z-index: 999; }
+  25%   { visibility: hidden; z-index: 0; }
+  100%  { visibility: hidden; z-index: 0; }
+}
+
+@-ms-keyframes showMeTitle {
+  0%    { visibility: visible; z-index: 999; }
+  12.5% { visibility: visible; z-index: 999; }
+  25%   { visibility: hidden; z-index: 0; }
+  100%  { visibility: hidden; z-index: 0; }
+}
+
+@-o-keyframes showMeTitle {
+  0%    { visibility: visible; z-index: 999; }
+  12.5% { visibility: visible; z-index: 999; }
+  25%   { visibility: hidden; z-index: 0; }
+  100%  { visibility: hidden; z-index: 0; }
+}
+
+@keyframes showMeTitle {
+  0%    { visibility: visible; z-index: 999; }
+  12.5% { visibility: visible; z-index: 999; }
+  25%   { visibility: hidden; z-index: 0; }
+  100%  { visibility: hidden; z-index: 0; }
+}
+
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////

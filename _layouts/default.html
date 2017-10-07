@@ -1,0 +1,37 @@
+{% include header.html %}
+
+<h1>
+  <span>Juanma Pérez Rabasco</span><br>
+  <span>Web Developer<br>
+  Barcelona</span>
+</h1>
+
+{% for work in site.works %}
+
+<article style="background-color: {{ work.color }}">
+  <figure>
+
+    {% for image in work.images %}
+
+    <img class="img-fluid" src="{{ image.src }}">
+
+    {% endfor %}
+
+  </figure>
+</article>
+
+{% endfor %}
+
+<aside>
+
+  {{ content }}
+
+  {% if page.last_modified_at %}
+
+  ~ Last updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time> ~
+
+  {% endif %}
+
+</aside>
+
+{% include footer.html %}

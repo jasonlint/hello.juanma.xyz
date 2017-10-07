@@ -1,0 +1,26 @@
+# Setup
+title: Juanma Pérez Rabasco <hello@juanma.xyz>
+url:   http://juanma.xyz
+
+# Custom vars
+version: 0.0.0
+github:
+  repo:  https://github.com/aikijuanma/juanma.xyz
+
+# Serving
+port:             4000
+host:             localhost
+baseurl:          "" # does not include hostname
+
+# Outputting
+timezone:      Europe/Madrid
+
+# My collections
+collections:
+  works:
+    output:     true
+    permalink:  /:collection/:name
+
+# My plugins
+plugins:
+  - jekyll-sitemap
