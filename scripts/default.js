@@ -5,14 +5,6 @@ jQuery(document).ready(function ($) {
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  function overlapImages() {
-
-    var imageHeight = $('.img-fluid').height();
-    var imageWidth = $('.img-fluid').width();
-
-    $('.img-fluid:not(:first-child)').css({ 'margin-top' : -imageHeight + 'px' });
-  }
-
   function randomTitle() {
 
     var something = new Array(
@@ -24,17 +16,56 @@ jQuery(document).ready(function ($) {
     $('html head title').text( rant );
   }
 
+  function updateImageSize() {
+
+    $('article > figure').imagefit();
+  }
+
+  function updateFigureHeight() {
+
+    var imageHeight = $('.img-fluid').height();
+    $('article > figure').css({ 'height' : imageHeight + 'px' });
+  }
+
+  function updateArticleHeight() {
+
+    var imageHeight = $('.img-fluid').height();
+    $('article').css({ 'height' : imageHeight + (imageHeight / 2) + 'px', 'line-height' : imageHeight + (imageHeight / 2) + 'px' });
+  }
+
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  overlapImages();
   randomTitle();
+  updateImageSize();
+  updateFigureHeight();
+  updateArticleHeight();
+
+  if ($(window).width() < 844.24 + 158) {
+
+    updateFigureHeight();
+  }
+  if ($(window).width() < 844.24 + 32) {
+
+    updateArticleHeight();
+  }
+  else {
+  }
 
   $(window).resize(function () {
 
-    overlapImages();
+    if ($(window).width() < 844.24 + 158) {
+
+      updateFigureHeight();
+    }
+    if ($(window).width() < 844.24 + 32) {
+
+      updateArticleHeight();
+    }
+    else {
+    }
   });
 
 ////////////////////////////////////////////////////////////////
