@@ -8,7 +8,7 @@
 
 {% for work in site.works %}
 
-<article style="background-color: {{ work.color }}">
+<article>
   <figure>
 
     {% for image in work.images %}
@@ -16,6 +16,10 @@
     <img class="img-fluid" src="{{ image.src }}">
 
     {% endfor %}
+
+    <figcaption>
+      Cupcake ipsum dolor sit amet tootsie roll chocolate jujubes chupa chups. Marshmallow halvah sugar plum chocolate bar sesame snaps icing icing. Chocolate muffin candy canes jelly marzipan.
+    </figcaption>
 
   </figure>
 </article>
@@ -26,11 +30,9 @@
 
   {{ content }}
 
-  {% if page.last_modified_at %}
-
-  ~ Last updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time> ~
-
-  {% endif %}
+  <small>
+    <a href="{{ site.url }}/humans.txt">{% include computer.svg %}</a>
+  </small>
 
 </aside>
 
