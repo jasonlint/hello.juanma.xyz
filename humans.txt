@@ -7,14 +7,16 @@ Name: Juanma Perez Rabasco
 Location: Barcelona, ES
 
 CONTACT
-Phone: +34611470590
 Email: hello@juanma.xyz
-Public Key: 0x8476115c
-Fingerprint: E2DD 88B5 7C65 47B4 C3A4  959B 5A75 8823 8476 115C
+Ricochet: ricochet:cw2tvzsf3nlj6b6a
+Public Key: 0x5a7588238476115c
+Fingerprint: E2DD 88B5 7C65 47B4 C3A4 959B 5A75 8823 8476 115C
 
 SOCIAL
 Instagram: instagram.com/aikijuanma
+Jabber: aikijuanma@xmpp.jp
 Keybase: keybase.io/aikijuanma
+Mastodon: mastodon.social/@juanma
 Miiverse: miiverse.nintendo.net/users/aikijuanma
 Steam: steamcommunity.com/id/aikijuanma
 Twitter: twitter.com/aikijuanma
@@ -29,6 +31,7 @@ TECHNOLOGY
 Bootstrap (getbootstrap.com)
 GitHub (github.com)
 Google Fonts (fonts.google.com)
+jQuery (jquery.com)
 
 TOOLS
 Atom (atom.io)
