@@ -8,7 +8,6 @@ Location: Barcelona, ES
 
 CONTACT
 Email: hello@juanma.xyz
-Ricochet: ricochet:cw2tvzsf3nlj6b6a
 Public Key: 0x5a7588238476115c
 Fingerprint: E2DD 88B5 7C65 47B4 C3A4 959B 5A75 8823 8476 115C
 
@@ -17,9 +16,6 @@ Instagram: instagram.com/aikijuanma
 Jabber: aikijuanma@xmpp.jp
 Keybase: keybase.io/aikijuanma
 Mastodon: mastodon.social/@juanma
-Miiverse: miiverse.nintendo.net/users/aikijuanma
-Steam: steamcommunity.com/id/aikijuanma
-Twitter: twitter.com/aikijuanma
 
 PURPOSE
 I write [code], make things with pixels, and tweak systems.
