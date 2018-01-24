@@ -1,39 +1,13 @@
 {% include header.html %}
 
-<h1>
-  <span>Juanma Pérez Rabasco</span><br>
-  <span>Web Developer<br>
-  Barcelona</span>
-</h1>
-
-{% for work in site.works %}
-
-<article>
-  <figure>
-
-    {% for image in work.images %}
-
-    <img class="img-fluid" src="{{ image.src }}">
-
-    {% endfor %}
-
-    <figcaption>
-      Cupcake ipsum dolor sit amet tootsie roll chocolate jujubes chupa chups. Marshmallow halvah sugar plum chocolate bar sesame snaps icing icing. Chocolate muffin candy canes jelly marzipan.
-    </figcaption>
-
-  </figure>
-</article>
-
-{% endfor %}
-
-<aside>
+<main>
 
   {{ content }}
 
-  <small>
-    <a href="{{ site.url }}/humans.txt">{% include computer.svg %}</a>
-  </small>
+</main>
 
+<aside>
+  <a href="{{ site.url }}/humans.txt" title="I'm a human.">:)</a>
 </aside>
 
 {% include footer.html %}
