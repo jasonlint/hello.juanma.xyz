@@ -26,10 +26,15 @@ TECHNOLOGY
 Bootstrap (getbootstrap.com)
 Cloudflare (cloudflare.com)
 GitHub (github.com)
+<<<<<<< HEAD
 Hover (hover.com)
 jQuery (jquery.com)
 Namecoin (namecoin.org)
 ZeroNet (zeronet.io)
+=======
+Google Fonts (fonts.google.com)
+jQuery (jquery.com)
+>>>>>>> 803f6059a78e48dbc7109faae772de81a5837bd4
 
 TOOLS
 Atom (atom.io)
