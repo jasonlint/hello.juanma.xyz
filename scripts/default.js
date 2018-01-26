@@ -39,7 +39,7 @@
       $(this).addClass('active');
       $('html').attr('xml:lang', 'ca').attr('lang', 'ca');
       $('*[lang="ca"]').not('html').removeClass('hide').addClass('show');
-      $('*[lang="en"], *[lang="es"], *[lang="ja"]').not('html').removeClass('show').addClass('hide');
+      $('*[lang="en"], *[lang="es"], *[lang="jp"]').not('html').removeClass('show').addClass('hide');
     });
 
     ////////////////////////////////////////////////////////////////
@@ -51,7 +51,7 @@
       $(this).addClass('active');
       $('html').attr('xml:lang', 'en').attr('lang', 'en');
       $('*[lang="en"]').not('html').removeClass('hide').addClass('show');
-      $('*[lang="ca"], *[lang="es"], *[lang="ja"]').not('html').removeClass('show').addClass('hide');
+      $('*[lang="ca"], *[lang="es"], *[lang="jp"]').not('html').removeClass('show').addClass('hide');
     });
 
     ////////////////////////////////////////////////////////////////
@@ -63,7 +63,7 @@
       $(this).addClass('active');
       $('html').attr('xml:lang', 'es').attr('lang', 'es');
       $('*[lang="es"]').not('html').removeClass('hide').addClass('show');
-      $('*[lang="ca"], *[lang="en"], *[lang="ja"]').not('html').removeClass('show').addClass('hide');
+      $('*[lang="ca"], *[lang="en"], *[lang="jp"]').not('html').removeClass('show').addClass('hide');
     });
 
     ////////////////////////////////////////////////////////////////
@@ -73,8 +73,8 @@
       e.preventDefault();
       $('*[href="ca"], *[href="en"], *[href="es"]').removeClass('active');
       $(this).addClass('active');
-      $('html').attr('xml:lang', 'ja').attr('lang', 'ja');
-      $('*[lang="ja"]').not('html').removeClass('hide').addClass('show');
+      $('html').attr('xml:lang', 'jp').attr('lang', 'jp');
+      $('*[lang="jp"]').not('html').removeClass('hide').addClass('show');
       $('*[lang="ca"], *[lang="en"], *[lang="es"]').not('html').removeClass('show').addClass('hide');
     });
   };
