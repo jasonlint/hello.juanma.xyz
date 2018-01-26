@@ -28,7 +28,7 @@
 
   function revealContent() {
 
-    $('body').removeClass('hide').addClass('fadeIn');
+    $('.page').removeClass('hide').addClass('fadeIn');
   }
 
   function switchLanguage() {
@@ -88,9 +88,13 @@ jQuery(document).ready(function ($) {
 
   hiddenCode();
   replacePilcrow();
-  revealContent();
+
   switchLanguage();
   externalLink();
+});
+
+$(window).on("load", function() {
+  revealContent();
 });
 
 ////////////////////////////////////////////////////////////////
