@@ -81,7 +81,7 @@
 
   function externalLink() {
 
-    $("a[href^='http']:not([href*='localhost:4000'])").each(function() {
+    $("a[href^='http']:not([href*='juanma.xyz'])").each(function() {
       $(this).click(function(event) {
         event.preventDefault();
         event.stopPropagation();
