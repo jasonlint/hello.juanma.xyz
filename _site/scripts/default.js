@@ -21,24 +21,6 @@
     });
   }
 
-  function randomFavicon() {
-
-    var something = new Array(
-      "https://juanma.xyz/noise/01.png",
-      "https://juanma.xyz/noise/02.png",
-      "https://juanma.xyz/noise/03.png",
-      "https://juanma.xyz/noise/04.png",
-      "https://juanma.xyz/noise/05.png",
-      "https://juanma.xyz/noise/06.png",
-      "https://juanma.xyz/noise/07.png",
-      "https://juanma.xyz/noise/08.png",
-      "https://juanma.xyz/noise/09.png",
-      "https://juanma.xyz/noise/10.png"
-    ),
-    favicon = something[Math.floor( Math.random() * something.length )];
-    $('link[rel="icon"]').attr('href', favicon);
-  }
-
   function replacePilcrow() {
 
     $('body').html($('body').html().replace(/\¶/g, '<span class="pilcrow"></span>'));
@@ -106,7 +88,6 @@ jQuery(document).ready(function ($) {
 
   externalLink();
   hiddenCode();
-  randomFavicon();
   replacePilcrow();
   revealContent();
   switchLanguage();
