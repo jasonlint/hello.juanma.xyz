@@ -52,13 +52,55 @@ html {
           margin: 0 auto;
           position: relative;
 
+          > div {
+
+            &[lang="ja"] {
+              font-family: 'Nitti Light';
+
+              a {
+
+                &:hover {
+                  font-family: 'Nitti Light Italic'; .normal;
+                }
+
+                > .external-link {
+                  font-family: 'Nitti Light', Courier, Menlo, monospace; .normal;
+                }
+              }
+
+              em, i {
+                font-family: 'Nitti Light Italic'; .normal;
+              }
+            }
+          }
+
           a {
-            color: @Black;
+            color: fade(@Black, 80%);
+            position: relative;
             text-decoration: none;
+            white-space: nowrap;
+            margin: 0 -2px;
+            padding: 0 2px; padding-right: 0.4em;
 
             &:hover {
               .NittiLightItalic;
               text-decoration: line-through;
+            }
+
+            &[href="https://hkps.pool.sks-keyservers.net/pks/lookup?op=get&search=0x5a7588238476115c"] {
+
+              > span {
+                .hide !important;
+              }
+            }
+
+            > .external-link {
+              background-repeat: no-repeat;
+              background-size: contain;
+              display: inline-block;
+              height: auto; width: 0.4em;
+              position: absolute; bottom: 0.2em; right: 0em;
+              text-align: center;
             }
           }
 
@@ -70,37 +112,6 @@ html {
             margin: 0;
           }
         }
-
-        // a {
-        //
-        //   &[title="Warp Zone"] {
-        //     display: flex;
-        //     height: 16px * 3; width: 16px * 3;
-        //     margin: 0 auto;
-        //     position: relative;
-        //     overflow: hidden;
-        //
-        //     > span {
-        //       position: absolute;
-        //
-        //       &:nth-child(1) {
-        //         .hide;
-        //         background: linear-gradient(to bottom, @Black, @Black 50%, @Black 50%);
-        //         border-radius: 50%;
-        //         height: 16px * 1.25; width: 16px * 1.25;
-        //         top: 14px; left: 14px;
-        //       }
-        //
-        //       &:nth-child(2) {
-        //         .show;
-        //         background: linear-gradient(to bottom, @Magenta, @Magenta 50%, @Black 50%);
-        //         border-radius: 50%;
-        //         height: 16px; width: 16px;
-        //         top: 16px; left: 16px;
-        //       }
-        //     }
-        //   }
-        // }
 
         ::-moz-selection {
           background-color: @anotherBlue;

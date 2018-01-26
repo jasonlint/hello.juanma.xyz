@@ -21,18 +21,6 @@
     });
   }
 
-  function randomTitle() {
-
-    var something = new Array(
-      "I'm the operator with my pocket calculator",
-      "I program my home computer, beam myself into the future",
-      "Boing Boom Tschak"
-    ),
-    rant = something[Math.floor( Math.random() * something.length )];
-    $('html head title').text( rant );
-    $('html body > span').text( rant );
-  }
-
   function replacePilcrow() {
 
     $('body').html($('body').html().replace(/\¶/g, '<span class="pilcrow"></span>'));
@@ -42,24 +30,6 @@
 
     $('body').removeClass('hide').addClass('fadeIn');
   }
-
-  function switchStyle() {
-
-    var isToggled = false;
-
-    $(function() {
-      $('a[title="Warp Zone"]').on('click', function() {
-
-        isToggled = !isToggled;
-
-        if (isToggled) {
-          $('link[href="http://localhost:4000/styles/default.css"]').attr('href', 'http://localhost:4000/styles/alternate.css').fadeToggle( 'slow', 'linear' );
-        } else {
-          $('link[href="http://localhost:4000/styles/alternate.css"]').attr('href', 'http://localhost:4000/styles/default.css').fadeToggle( 'slow', 'linear' );
-        }
-      })
-    });
-  };
 
   function switchLanguage() {
 
@@ -109,6 +79,18 @@
     });
   };
 
+  function externalLink() {
+
+    $("a[href^='http']:not([href*='localhost:4000'])").each(function() {
+      $(this).click(function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        window.open(this.href, '_blank');
+      });
+      $(this).append('<span class="external-link">↗</span>')
+   });
+  }
+
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -117,11 +99,10 @@
 jQuery(document).ready(function ($) {
 
   hiddenCode();
-//randomTitle();
   replacePilcrow();
   revealContent();
   switchLanguage();
-//switchStyle();
+  externalLink();
 
   $(window).on('load', function () {
   });
