@@ -82,12 +82,7 @@
   function externalLink() {
 
     $("a[href^='http']:not([href*='juanma.xyz'])").each(function() {
-      $(this).click(function(event) {
-        event.preventDefault();
-        event.stopPropagation();
-        window.open(this.href, '_blank');
-      });
-      $(this).append('<span class="external-link">↗</span>')
+      $(this).attr('target', '_blank');
    });
   }
 
