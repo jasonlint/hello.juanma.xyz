@@ -35,7 +35,6 @@
 
     $('*[href="ca"]').click(function(e) {
       e.preventDefault();
-      $('*[href="en"], *[href="es"], *[href="jp"]');
       $('html').attr('xml:lang', 'ca').attr('lang', 'ca');
       $('*[lang="ca"]').not('html').removeClass('hide').addClass('show');
       $('*[lang="en"], *[lang="es"], *[lang="jp"]').not('html').removeClass('show').addClass('hide');
@@ -46,7 +45,6 @@
 
     $('*[href="en"]').click(function(e) {
       e.preventDefault();
-      $('*[href="ca"], *[href="es"], *[href="jp"]');
       $('html').attr('xml:lang', 'en').attr('lang', 'en');
       $('*[lang="en"]').not('html').removeClass('hide').addClass('show');
       $('*[lang="ca"], *[lang="es"], *[lang="jp"]').not('html').removeClass('show').addClass('hide');
@@ -57,7 +55,6 @@
 
     $('*[href="es"]').click(function(e) {
       e.preventDefault();
-      $('*[href="ca"], *[href="en"], *[href="jp"]');
       $('html').attr('xml:lang', 'es').attr('lang', 'es');
       $('*[lang="es"]').not('html').removeClass('hide').addClass('show');
       $('*[lang="ca"], *[lang="en"], *[lang="jp"]').not('html').removeClass('show').addClass('hide');
@@ -68,7 +65,6 @@
 
     $('*[href="jp"]').click(function(e) {
       e.preventDefault();
-      $('*[href="ca"], *[href="en"], *[href="es"]');
       $('html').attr('xml:lang', 'jp').attr('lang', 'jp');
       $('*[lang="jp"]').not('html').removeClass('hide').addClass('show');
       $('*[lang="ca"], *[lang="en"], *[lang="es"]').not('html').removeClass('show').addClass('hide');
