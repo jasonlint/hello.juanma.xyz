@@ -55,7 +55,7 @@ html {
           > div {
 
             &[lang="jp"] {
-              font-family: 'Nitti Light';
+              font-family: 'Nitti Light'; .normal;
 
               a {
 
@@ -117,14 +117,14 @@ html {
             margin: 0;
           }
         }
-
-        ::-moz-selection {
-          background-color: @anotherBlue;
-          color: @White;
-        }
       }
     }
   }
+}
+
+::-moz-selection {
+  background-color: @anotherBlue;
+  color: @White;
 }
 
 ::selection {
