@@ -9,71 +9,35 @@
 
 @media (min-width: 320px) {
 
-  html {
-
-    body {
-
-      .page {
-
-        .container-fluid {
-
-          > main {
-            padding: 16px * 2;
-          }
-        }
-      }
-    }
-  }
+  html { body { .page { .container-fluid { > main { padding: 16px * 2; } } } } }
 }
 
 @media (min-width: 768px) {
 
-  html {
-
-    body {
-
-      .page {
-
-        .container-fluid {
-
-          > main {
-            padding: 16px * 4;
-          }
-        }
-      }
-    }
-  }
+  html { body { .page { .container-fluid { > main { padding: 16px * 4; } } } } }
 }
 
 @media (min-width: 1024px) {
 
-  html {
-
-    body {
-
-      .page {
-
-        .container-fluid {
-
-          > main {
-            padding: 16px * 6;
-          }
-        }
-      }
-    }
-  }
+  html { body { .page { .container-fluid { > main { padding: 16px * 6; } } } } }
 }
 
 html {
-  background-color: @White;
+  height: 100%; width: 100%;
   margin: 0;
+  min-height: 100%; min-width: 100%;
   padding: 0;
 
   body {
+    background-color: @White;
+    height: 100%; width: 100%;
     margin: 0;
     padding: 0;
 
     .page {
+      background-color: @White;
+      height: 100%; width: 100%;
+      z-index: 2;
 
       .container-fluid {
         padding-right: 0; padding-left: 0;
@@ -81,7 +45,6 @@ html {
         > main {
           .NittiLight;
           .show;
-          background-color: @White;
           color: fade(@Black, 80%);
           font-size: 16px;
           letter-spacing: 0;
@@ -102,38 +65,50 @@ html {
           em, i {
             .NittiLightItalic; .normal;
           }
+
+          p {
+            margin: 0;
+          }
         }
 
-        aside {
-          .NittiLight;
-          .hide;
-          font-size: 100%;
-          height: 16px * 4; width: 16px * 4;
-          line-height: 16px * 4;
-          position: absolute;
-          bottom: 0; left: calc(~'50% - ((16px * 4) / 2)');
-          text-align: center;
+        // a {
+        //
+        //   &[title="Warp Zone"] {
+        //     display: flex;
+        //     height: 16px * 3; width: 16px * 3;
+        //     margin: 0 auto;
+        //     position: relative;
+        //     overflow: hidden;
+        //
+        //     > span {
+        //       position: absolute;
+        //
+        //       &:nth-child(1) {
+        //         .hide;
+        //         background: linear-gradient(to bottom, @Black, @Black 50%, @Black 50%);
+        //         border-radius: 50%;
+        //         height: 16px * 1.25; width: 16px * 1.25;
+        //         top: 14px; left: 14px;
+        //       }
+        //
+        //       &:nth-child(2) {
+        //         .show;
+        //         background: linear-gradient(to bottom, @Magenta, @Magenta 50%, @Black 50%);
+        //         border-radius: 50%;
+        //         height: 16px; width: 16px;
+        //         top: 16px; left: 16px;
+        //       }
+        //     }
+        //   }
+        // }
 
-          > a {
-            .show;
-            .transition;
-            color: @Black;
-            text-decoration: none;
-
-            &:hover {
-              .NittiLightItalic;
-              //text-decoration: line-through;
-            }
-          }
+        ::-moz-selection {
+          background-color: @anotherBlue;
+          color: @White;
         }
       }
     }
   }
-}
-
-::-moz-selection {
-  background-color: @anotherBlue;
-  color: @White;
 }
 
 ::selection {

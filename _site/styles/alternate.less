@@ -1,4 +1,4 @@
-// out: default.css, sourcemap: false, compress: true
+// out: alternate.css, sourcemap: false, compress: true
 
 @import url('base.less');
 
@@ -29,13 +29,13 @@ html {
   padding: 0;
 
   body {
-    background-color: @White;
+    background-color: @Black;
     height: 100%; width: 100%;
     margin: 0;
     padding: 0;
 
     .page {
-      background-color: @White;
+      background-color: @Black;
       height: 100%; width: 100%;
       z-index: 2;
 
@@ -45,7 +45,7 @@ html {
         > main {
           .NittiLight;
           .show;
-          color: fade(@Black, 80%);
+          color: fade(@White, 80%);
           font-size: 16px;
           letter-spacing: 0;
           line-height: 16px * 1.5;
@@ -53,7 +53,7 @@ html {
           position: relative;
 
           a {
-            color: @Black;
+            color: @White;
             text-decoration: none;
 
             &:hover {
@@ -71,40 +71,40 @@ html {
           }
         }
 
-        // a {
-        //
-        //   &[title="Warp Zone"] {
-        //     display: flex;
-        //     height: 16px * 3; width: 16px * 3;
-        //     margin: 0 auto;
-        //     position: relative;
-        //     overflow: hidden;
-        //
-        //     > span {
-        //       position: absolute;
-        //
-        //       &:nth-child(1) {
-        //         .hide;
-        //         background: linear-gradient(to bottom, @Black, @Black 50%, @Black 50%);
-        //         border-radius: 50%;
-        //         height: 16px * 1.25; width: 16px * 1.25;
-        //         top: 14px; left: 14px;
-        //       }
-        //
-        //       &:nth-child(2) {
-        //         .show;
-        //         background: linear-gradient(to bottom, @Magenta, @Magenta 50%, @Black 50%);
-        //         border-radius: 50%;
-        //         height: 16px; width: 16px;
-        //         top: 16px; left: 16px;
-        //       }
-        //     }
-        //   }
-        // }
+        a {
+
+          &[title="Warp Zone"] {
+            display: flex;
+            height: 16px * 3; width: 16px * 3;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+
+            > span {
+              position: absolute;
+
+              &:nth-child(1) {
+                .hide;
+                background: linear-gradient(to bottom, @White, @White 50%, @White 50%);
+                border-radius: 50%;
+                height: 16px * 1.25; width: 16px * 1.25;
+                top: 14px; left: 14px;
+              }
+
+              &:nth-child(2) {
+                .show;
+                background: linear-gradient(to bottom, @anotherBlue, @anotherBlue 50%, @White 50%);
+                border-radius: 50%;
+                height: 16px; width: 16px;
+                top: 16px; left: 16px;
+              }
+            }
+          }
+        }
 
         ::-moz-selection {
-          background-color: @anotherBlue;
-          color: @White;
+          background-color: @Magenta;
+          color: @Black;
         }
       }
     }
@@ -112,14 +112,14 @@ html {
 }
 
 ::selection {
-  background-color: @anotherBlue;
-  color: @White;
+  background-color: @Magenta;
+  color: @Black;
 }
 
 .pilcrow {
 
   &:after {
-    color: @anotherBlue;
+    color: @Magenta;
     content: "❚";
     display: inline-block;
   }
