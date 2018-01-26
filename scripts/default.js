@@ -76,7 +76,7 @@
     $.expr[':'].external = function(obj) {
       return !obj.href.match(/^mailto\:/) && (obj.hostname != location.hostname);
     };
-    $('a:external').addClass('external');
+    $('a:external').addClass('external').attr('target', '_blank');
   }
 
 ////////////////////////////////////////////////////////////////
