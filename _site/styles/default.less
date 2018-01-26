@@ -63,7 +63,7 @@ html {
                   font-family: 'Nitti Light Italic'; .normal;
                 }
 
-                > .external-link {
+                &.external {
                   font-family: 'Nitti Light', Courier, Menlo, monospace; .normal;
                 }
               }
@@ -79,22 +79,16 @@ html {
             position: relative;
             text-decoration: none;
             white-space: nowrap;
-            margin: 0 -2px;
-            padding: 0 2px; padding-right: 0.4em;
+
 
             &:hover {
               .NittiLightItalic;
               text-decoration: line-through;
             }
 
-            &[href="https://hkps.pool.sks-keyservers.net/pks/lookup?op=get&search=0x5a7588238476115c"] {
-
-              &:after {
-                .hide !important;
-              }
-            }
-
-            &[target="_blank"] {
+            &.external {
+              margin: 0 -2px;
+              padding: 0 2px; padding-right: 0.4em;
 
               &:after {
                 background-repeat: no-repeat;
@@ -104,6 +98,13 @@ html {
                 height: auto; width: 0.4em;
                 position: absolute; bottom: 0.2em; right: 0em;
                 text-align: center;
+              }
+            }
+
+            &[href="https://hkps.pool.sks-keyservers.net/pks/lookup?op=get&search=0x5a7588238476115c"] {
+
+              &:after {
+                .hide !important;
               }
             }
           }

@@ -35,7 +35,7 @@
 
     $('*[href="ca"]').click(function(e) {
       e.preventDefault();
-      $('*[href="en"], *[href="es"], *[href="ja"]').removeClass('active');
+      $('*[href="en"], *[href="es"], *[href="jp"]').removeClass('active');
       $(this).addClass('active');
       $('html').attr('xml:lang', 'ca').attr('lang', 'ca');
       $('*[lang="ca"]').not('html').removeClass('hide').addClass('show');
@@ -47,7 +47,7 @@
 
     $('*[href="en"]').click(function(e) {
       e.preventDefault();
-      $('*[href="ca"], *[href="es"], *[href="ja"]').removeClass('active');
+      $('*[href="ca"], *[href="es"], *[href="jp"]').removeClass('active');
       $(this).addClass('active');
       $('html').attr('xml:lang', 'en').attr('lang', 'en');
       $('*[lang="en"]').not('html').removeClass('hide').addClass('show');
@@ -59,7 +59,7 @@
 
     $('*[href="es"]').click(function(e) {
       e.preventDefault();
-      $('*[href="ca"], *[href="en"], *[href="ja"]').removeClass('active');
+      $('*[href="ca"], *[href="en"], *[href="jp"]').removeClass('active');
       $(this).addClass('active');
       $('html').attr('xml:lang', 'es').attr('lang', 'es');
       $('*[lang="es"]').not('html').removeClass('hide').addClass('show');
@@ -69,7 +69,7 @@
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
 
-    $('*[href="ja"]').click(function(e) {
+    $('*[href="jp"]').click(function(e) {
       e.preventDefault();
       $('*[href="ca"], *[href="en"], *[href="es"]').removeClass('active');
       $(this).addClass('active');
@@ -81,9 +81,10 @@
 
   function externalLink() {
 
-    $("a[href^='http']:not([href*='juanma.xyz'])").each(function() {
-      $(this).attr('target', '_blank');
-   });
+    $.expr[':'].external = function(obj) {
+      return !obj.href.match(/^mailto\:/) && (obj.hostname != location.hostname);
+    };
+    $('a:external').addClass('external');
   }
 
 ////////////////////////////////////////////////////////////////
