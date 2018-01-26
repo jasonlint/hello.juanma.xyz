@@ -88,12 +88,11 @@ jQuery(document).ready(function ($) {
 
   hiddenCode();
   replacePilcrow();
-
   switchLanguage();
   externalLink();
 });
 
-$(window).on("load", function() {
+$(window).on('load', function() {
   revealContent();
 });
 
