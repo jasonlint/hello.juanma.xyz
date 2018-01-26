@@ -86,14 +86,11 @@
 
 jQuery(document).ready(function ($) {
 
+  externalLink();
   hiddenCode();
   replacePilcrow();
-  switchLanguage();
-  externalLink();
-});
-
-$(window).on('load', function() {
   revealContent();
+  switchLanguage();
 });
 
 ////////////////////////////////////////////////////////////////
