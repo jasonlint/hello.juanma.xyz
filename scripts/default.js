@@ -91,7 +91,6 @@ jQuery(document).ready(function ($) {
   revealContent();
   switchLanguage();
   externalLink();
-
 });
 
 ////////////////////////////////////////////////////////////////
