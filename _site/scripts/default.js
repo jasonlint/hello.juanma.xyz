@@ -99,9 +99,6 @@ jQuery(document).ready(function ($) {
   switchLanguage();
   externalLink();
 
-  $(window).on('load', function () {
-  });
-
 });
 
 ////////////////////////////////////////////////////////////////
