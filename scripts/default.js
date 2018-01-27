@@ -184,7 +184,7 @@ jQuery(document).ready(function ($) {
   switchLanguage();
   windowLocationHash();
 
-  if (window.location.href === 'https://juanma.xyz') {
+  if (window.location.href === 'https://juanma.xyz/') {
     window.location.hash = '#en'; // Because english is the default language
   }
 
