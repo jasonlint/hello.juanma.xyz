@@ -184,12 +184,11 @@ jQuery(document).ready(function ($) {
   switchLanguage();
   windowLocationHash();
 
-  if (window.location.href === 'https://juanma.xyz/') {
+  if (window.location.href === window.location.origin + '/') {
     window.location.hash = '#en'; // Because english is the default language
   }
 
   console.log('up, up, down, down, left, right, left, right, b, a');
-  console.log(window.location.href);
 });
 
 ////////////////////////////////////////////////////////////////
