@@ -24,6 +24,24 @@ html {
     margin: 0;
     padding: 0;
 
+    &[warning="ERROR"] {
+
+      .page {
+
+        .container-fluid {
+
+          > main {
+            padding: 0;
+
+            img {
+              .show;
+              height: auto; width: 100%;
+            }
+          }
+        }
+      }
+    }
+
     .page {
       background-color: @White;
       height: 100%; width: 100%;

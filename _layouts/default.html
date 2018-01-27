@@ -2,7 +2,7 @@
 
 <main>
 
-  {{ content }}
+  {{ content  | remove: '<p>' | remove: '</p>' }}
 
 </main>
 
