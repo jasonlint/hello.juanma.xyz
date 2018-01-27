@@ -189,6 +189,7 @@ jQuery(document).ready(function ($) {
   }
 
   console.log('up, up, down, down, left, right, left, right, b, a');
+  console.log(window.location.href);
 });
 
 ////////////////////////////////////////////////////////////////
