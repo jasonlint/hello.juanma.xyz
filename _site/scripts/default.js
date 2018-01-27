@@ -86,12 +86,12 @@
     favicon32x32.href = '/laundry-care-symbols/' + icon + '/favicon-32x32.png';
     document.getElementsByTagName('head')[0].appendChild(favicon32x32);
 
-    var favicon16x16 = document.querySelector("link[href*='/favicon-16x16.png']") || document.createElement('link');
-    favicon16x16.rel = 'icon';
-    favicon16x16.type = 'image/png';
-    favicon16x16.sizes = '16x16';
-    favicon16x16.href = '/laundry-care-symbols/' + icon + '/favicon-16x16.png';
-    document.getElementsByTagName('head')[0].appendChild(favicon16x16);
+    // var favicon16x16 = document.querySelector("link[href*='/favicon-16x16.png']") || document.createElement('link');
+    // favicon16x16.rel = 'icon';
+    // favicon16x16.type = 'image/png';
+    // favicon16x16.sizes = '16x16';
+    // favicon16x16.href = '/laundry-care-symbols/' + icon + '/favicon-16x16.png';
+    // document.getElementsByTagName('head')[0].appendChild(favicon16x16);
 
     var manifest = document.querySelector("link[href*='/manifest.json']") || document.createElement('link');
     manifest.rel = 'manifest';
