@@ -184,7 +184,11 @@ jQuery(document).ready(function ($) {
   switchLanguage();
   windowLocationHash();
 
-  window.location.hash = '#en'; // Because english is the default language
+  if (window.location.pathname === location.origin + '/') {
+    window.location.hash = '#en'; // Because english is the default language
+  }
+
+  console.log('up, up, down, down, left, right, left, right, b, a');
 });
 
 ////////////////////////////////////////////////////////////////
