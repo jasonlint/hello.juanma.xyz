@@ -17,7 +17,7 @@ Soy un programador independiente de Barcelona. Desarrollo aplicaciones web para 
 </div>
 
 <div class="hide" id="jp" lang="jp" markdown="1">
-バルセロナを拠点に活躍しておりますディベロッパーです。企業や公的機関の依頼でWebアプリケーションを作成しています。また、趣味で「コード」を書いたり、ピクセルで何かを作ったり、システムを変更したりして楽しんでいます。 ¶ これまで、[Ananás], [Barcelona Academy of Art], [DeHavilland Ediciones], [Etnia Barcelona], [Fundació MONA], [I/O studio], [IESE Business School], [Lupercales], [Masterbloggen], [Micuento], [Prospera], [Save The Monkey] を始めとする多くの企業とともに仕事をしてきました。 ¶ 最近では、アトミック・デザイン、ブロックチェーン、クリティカル・メイキング、デジタル・ヒューマニティーズ、分散ネットワーク、そして、どのようにしてデザインとコードを組み合わせて最高の物を生み出せるかということに焦点を当てております。 ¶ お問い合わせはこちらから： [hello@juanma.xyz] ([0x5a7588238476115c])。 ¶ [私は人間だよね]({{ site.url }}/humans.txt "^_^")。あいうえお！ [ca](#ca "カタルーニャ語")、[en](#en "英語")、[es](#es "スペイン語")、[jp](#jp "日本語")。
+バルセロナを拠点に活躍しておりますディベロッパーです。企業や公的機関の依頼でWebアプリケーションを作成しています。また、趣味で「コード」を書いたり、ピクセルで何かを作ったり、システムを変更したりして楽しんでいます。 ¶ これまで、[Ananás], [Barcelona Academy of Art], [DeHavilland Ediciones], [Etnia Barcelona], [Fundació MONA], [I/O studio], [IESE Business School], [Lupercales], [Masterbloggen], [Micuento], [Prospera], [Save The Monkey] を始めとする多くの企業とともに仕事をしてきました。 ¶ 最近では、アトミック・デザイン、ブロックチェーン、クリティカル・メイキング、デジタル・ヒューマニティーズ、分散ネットワーク、そして、どのようにしてデザインとコードを組み合わせて最高の物を生み出せるかということに焦点を当てております。 ¶ お問い合わせはこちらから：[hello@juanma.xyz] ([0x5a7588238476115c])。 ¶ [私は人間だよね]({{ site.url }}/humans.txt "^_^")。あいうえお！ [ca](#ca "カタルーニャ語")、[en](#en "英語")、[es](#es "スペイン語")、[jp](#jp "日本語")。
 </div>
 
 [Ananás]: http://ananasstudio.com "Ananás"
