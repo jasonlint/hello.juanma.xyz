@@ -24,15 +24,18 @@
     };
 
     function draw(img) {
-      var ffffound = document.getElementById('ffffound');
-      var canvas = ffffound.getContext('2d');
-      ffffound.setAttribute("width", img.width);
-      ffffound.setAttribute("height", img.height);
-      var verticalSlices = Math.round(img.height / 16);
-      var maxHorizOffset = 16;
-      for (var i = 0; i < verticalSlices; i++)  {
-        var horizOffset = getRandom(-Math.abs(maxHorizOffset), maxHorizOffset);
-        canvas.drawImage(img, 0, i * verticalSlices, img.width, i * verticalSlices + verticalSlices, horizOffset, i * verticalSlices, img.width, i * verticalSlices + verticalSlices);
+
+      if( $('.ffffound').length ) {
+        var ffffound = document.getElementById('ffffound');
+        var canvas = ffffound.getContext('2d');
+        ffffound.setAttribute("width", img.width);
+        ffffound.setAttribute("height", img.height);
+        var verticalSlices = Math.round(img.height / 16);
+        var maxHorizOffset = 16;
+        for (var i = 0; i < verticalSlices; i++)  {
+          var horizOffset = getRandom(-Math.abs(maxHorizOffset), maxHorizOffset);
+          canvas.drawImage(img, 0, i * verticalSlices, img.width, i * verticalSlices + verticalSlices, horizOffset, i * verticalSlices, img.width, i * verticalSlices + verticalSlices);
+        }
       }
     }
   }
