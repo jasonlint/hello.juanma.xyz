@@ -25,17 +25,15 @@
 
     function draw(img) {
 
-      if( $('.ffffound').length ) {
-        var ffffound = document.getElementById('ffffound');
-        var canvas = ffffound.getContext('2d');
-        ffffound.setAttribute("width", img.width);
-        ffffound.setAttribute("height", img.height);
-        var verticalSlices = Math.round(img.height / 16);
-        var maxHorizOffset = 16;
-        for (var i = 0; i < verticalSlices; i++)  {
-          var horizOffset = getRandom(-Math.abs(maxHorizOffset), maxHorizOffset);
-          canvas.drawImage(img, 0, i * verticalSlices, img.width, i * verticalSlices + verticalSlices, horizOffset, i * verticalSlices, img.width, i * verticalSlices + verticalSlices);
-        }
+      var ffffound = document.getElementById('ffffound');
+      var canvas = ffffound.getContext('2d');
+      ffffound.setAttribute("width", img.width);
+      ffffound.setAttribute("height", img.height);
+      var verticalSlices = Math.round(img.height / 16);
+      var maxHorizOffset = 16;
+      for (var i = 0; i < verticalSlices; i++)  {
+        var horizOffset = getRandom(-Math.abs(maxHorizOffset), maxHorizOffset);
+        canvas.drawImage(img, 0, i * verticalSlices, img.width, i * verticalSlices + verticalSlices, horizOffset, i * verticalSlices, img.width, i * verticalSlices + verticalSlices);
       }
     }
   }
@@ -206,13 +204,16 @@
 jQuery(document).ready(function ($) {
 
   externalLink();
-  glitch();
   hiddenCode();
   randomFavicon();
   replacePilcrow();
   revealContent();
   switchLanguage();
   windowLocationHash();
+
+  if (top.location.pathname !== '/') {
+    glitch();
+  }
 
   if (window.location.href === window.location.origin + '/') {
     window.location.hash = '#en'; // Because english is the default language
