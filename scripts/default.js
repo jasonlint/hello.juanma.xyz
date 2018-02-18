@@ -76,14 +76,14 @@
     var appleTouchIcon = document.querySelector("link[href*='/apple-touch-icon.png']") || document.createElement('link');
     appleTouchIcon.rel = 'apple-touch-icon.png';
     appleTouchIcon.sizes = '180x180';
-    appleTouchIcon.href = '/laundry-care-symbols/' + icon + '/apple-touch-icon.png';
+    appleTouchIcon.href = 'https://juanma.xyz' + '/laundry-care-symbols/' + icon + '/apple-touch-icon.png';
     document.getElementsByTagName('head')[0].appendChild(appleTouchIcon);
 
     var favicon32x32 = document.querySelector("link[href*='/favicon-32x32.png']") || document.createElement('link');
     favicon32x32.rel = 'icon';
     favicon32x32.type = 'image/png';
     favicon32x32.sizes = '32x32';
-    favicon32x32.href = '/laundry-care-symbols/' + icon + '/favicon-32x32.png';
+    favicon32x32.href = 'https://juanma.xyz' + '/laundry-care-symbols/' + icon + '/favicon-32x32.png';
     document.getElementsByTagName('head')[0].appendChild(favicon32x32);
 
     // var favicon16x16 = document.querySelector("link[href*='/favicon-16x16.png']") || document.createElement('link');
@@ -95,12 +95,12 @@
 
     var manifest = document.querySelector("link[href*='/manifest.json']") || document.createElement('link');
     manifest.rel = 'manifest';
-    manifest.href = '/laundry-care-symbols/' + icon + '/manifest.json';
+    manifest.href = 'https://juanma.xyz' + '/laundry-care-symbols/' + icon + '/manifest.json';
     document.getElementsByTagName('head')[0].appendChild(manifest);
 
     var safariPinnedTab = document.querySelector("link[href*='/safari-pinned-tab.svg']") || document.createElement('link');
     safariPinnedTab.rel = 'mask-icon';
-    safariPinnedTab.href = '/laundry-care-symbols/' + icon + '/safari-pinned-tab.svg';
+    safariPinnedTab.href = 'https://juanma.xyz' + '/laundry-care-symbols/' + icon + '/safari-pinned-tab.svg';
     safariPinnedTab.color = '#000000';
     document.getElementsByTagName('head')[0].appendChild(safariPinnedTab);
 
