@@ -11,6 +11,6 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
     <meta name="theme-color" content="#ffffff">
   </head>
-  <body {% if page.permalink == '/404.html' %} warning="ERROR" {% endif %} >
+  <body {% if page.url != '/' %} warning="ERROR"{% endif %} tmp="{{ page.url }}">
     <div class="page hide">
       <div class="container-fluid">
