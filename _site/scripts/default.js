@@ -32,16 +32,6 @@
   function randomFavicon() {
 
     var something = new Array(
-      // 'https://www.stackoverflow.com/favicon.ico',
-      // 'https://ssl.gstatic.com/ui/v1/icons/mail/images/favicon5.ico',
-      // 'https://www.coinbase.com/favicon.ico',
-      // 'https://www.kraken.com/img/favicon.ico',
-      // 'https://duckduckgo.com/favicon.ico',
-      // 'https://www.wikipedia.org/static/favicon/wikipedia.ico',
-      // 'https://abs.twimg.com/favicons/favicon.ico',
-      // 'https://mbp.yimg.com/sy/rz/l/favicon.ico',
-      // 'https://www.youtube.com/yts/img/favicon-vfl8qSV2F.ico',
-      // 'https://static.xx.fbcdn.net/rsrc.php/yl/r/H3nktOa7ZMg.ico'
       '1533927', // Bleach No Chlorine
       '1533928', // Bleach
       '1533929', // Drip Drying
