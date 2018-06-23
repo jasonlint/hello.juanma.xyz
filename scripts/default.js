@@ -94,14 +94,14 @@
     safariPinnedTab.color = '#000000';
     document.getElementsByTagName('head')[0].appendChild(safariPinnedTab);
 
-    // How to prevent favicon.ico requests?
-    // https://stackoverflow.com/questions/1321878/how-to-prevent-favicon-ico-requests
+    /*
     var favicon = document.createElement('link');
     favicon.rel = 'icon';
     favicon.type = 'image/png';
-    // favicon.href = window.location.origin + '/laundry-care-symbols/' + icon + '/favicon.ico';
+    favicon.href = window.location.origin + '/laundry-care-symbols/' + icon + '/favicon.ico';
     favicon.href = 'data:image/png;base64,iVBORw0KGgo=';
     document.getElementsByTagName('head')[0].appendChild(favicon);
+    */
 
     var msapplicationTileColor = document.createElement('meta');
     msapplicationTileColor.name = 'msapplication-TileColor';
