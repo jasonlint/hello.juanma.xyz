@@ -63,13 +63,13 @@
     ),
     icon = something[Math.floor( Math.random() * something.length )];
 
-    var appleTouchIcon = document.querySelector("link[href*='/apple-touch-icon.png']") || document.createElement('link');
+    var appleTouchIcon = document.createElement('link');
     appleTouchIcon.rel = 'apple-touch-icon.png';
     appleTouchIcon.sizes = '180x180';
     appleTouchIcon.href = 'https://juanma.xyz' + '/laundry-care-symbols/' + icon + '/apple-touch-icon.png';
     document.getElementsByTagName('head')[0].appendChild(appleTouchIcon);
 
-    var favicon32x32 = document.querySelector("link[href*='/favicon-32x32.png']") || document.createElement('link');
+    var favicon32x32 = document.createElement('link');
     favicon32x32.rel = 'icon';
     favicon32x32.type = 'image/png';
     favicon32x32.sizes = '32x32';
@@ -83,18 +83,18 @@
     // favicon16x16.href = '/laundry-care-symbols/' + icon + '/favicon-16x16.png';
     // document.getElementsByTagName('head')[0].appendChild(favicon16x16);
 
-    var manifest = document.querySelector("link[href*='/manifest.json']") || document.createElement('link');
+    var manifest = document.createElement('link');
     manifest.rel = 'manifest';
     manifest.href = 'https://juanma.xyz' + '/laundry-care-symbols/' + icon + '/manifest.json';
     document.getElementsByTagName('head')[0].appendChild(manifest);
 
-    var safariPinnedTab = document.querySelector("link[href*='/safari-pinned-tab.svg']") || document.createElement('link');
+    var safariPinnedTab = document.createElement('link');
     safariPinnedTab.rel = 'mask-icon';
     safariPinnedTab.href = 'https://juanma.xyz' + '/laundry-care-symbols/' + icon + '/safari-pinned-tab.svg';
     safariPinnedTab.color = '#000000';
     document.getElementsByTagName('head')[0].appendChild(safariPinnedTab);
 
-    var themeColor = document.querySelector("meta[name*='theme-color']") || document.createElement('meta');
+    var themeColor = document.createElement('meta');
     themeColor.name = 'theme-color';
     themeColor.content = '#ffffff';
     document.getElementsByTagName('head')[0].appendChild(themeColor);
