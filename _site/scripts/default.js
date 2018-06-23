@@ -66,33 +66,48 @@
     var appleTouchIcon = document.createElement('link');
     appleTouchIcon.rel = 'apple-touch-icon.png';
     appleTouchIcon.sizes = '180x180';
-    appleTouchIcon.href = 'https://juanma.xyz' + '/laundry-care-symbols/' + icon + '/apple-touch-icon.png';
+    appleTouchIcon.href = window.location.origin + '/laundry-care-symbols/' + icon + '/apple-touch-icon.png';
     document.getElementsByTagName('head')[0].appendChild(appleTouchIcon);
 
     var favicon32x32 = document.createElement('link');
     favicon32x32.rel = 'icon';
     favicon32x32.type = 'image/png';
     favicon32x32.sizes = '32x32';
-    favicon32x32.href = 'https://juanma.xyz' + '/laundry-care-symbols/' + icon + '/favicon-32x32.png';
+    favicon32x32.href = window.location.origin + '/laundry-care-symbols/' + icon + '/favicon-32x32.png';
     document.getElementsByTagName('head')[0].appendChild(favicon32x32);
 
-    // var favicon16x16 = document.querySelector("link[href*='/favicon-16x16.png']") || document.createElement('link');
-    // favicon16x16.rel = 'icon';
-    // favicon16x16.type = 'image/png';
-    // favicon16x16.sizes = '16x16';
-    // favicon16x16.href = '/laundry-care-symbols/' + icon + '/favicon-16x16.png';
-    // document.getElementsByTagName('head')[0].appendChild(favicon16x16);
+    var favicon16x16 = document.createElement('link');
+    favicon16x16.rel = 'icon';
+    favicon16x16.type = 'image/png';
+    favicon16x16.sizes = '16x16';
+    favicon16x16.href = window.location.origin + '/laundry-care-symbols/' + icon + '/favicon-16x16.png';
+    document.getElementsByTagName('head')[0].appendChild(favicon16x16);
 
     var manifest = document.createElement('link');
     manifest.rel = 'manifest';
-    manifest.href = 'https://juanma.xyz' + '/laundry-care-symbols/' + icon + '/manifest.json';
+    manifest.href = window.location.origin + '/laundry-care-symbols/' + icon + '/manifest.json';
     document.getElementsByTagName('head')[0].appendChild(manifest);
 
     var safariPinnedTab = document.createElement('link');
     safariPinnedTab.rel = 'mask-icon';
-    safariPinnedTab.href = 'https://juanma.xyz' + '/laundry-care-symbols/' + icon + '/safari-pinned-tab.svg';
+    safariPinnedTab.href = window.location.origin + '/laundry-care-symbols/' + icon + '/safari-pinned-tab.svg';
     safariPinnedTab.color = '#000000';
     document.getElementsByTagName('head')[0].appendChild(safariPinnedTab);
+
+    var favicon = document.createElement('link');
+    favicon.rel = 'shortcut icon';
+    favicon.href = window.location.origin + '/laundry-care-symbols/' + icon + '/favicon.ico';
+    document.getElementsByTagName('head')[0].appendChild(favicon);
+
+    var msapplicationTileColor = document.createElement('meta');
+    msapplicationTileColor.name = 'msapplication-TileColor';
+    msapplicationTileColor.content = '#000000';
+    document.getElementsByTagName('head')[0].appendChild(msapplicationTileColor);
+
+    var msapplicationConfig = document.createElement('meta');
+    msapplicationConfig.name = 'msapplicationConfig';
+    msapplicationConfig.content = window.location.origin + '/laundry-care-symbols/' + icon + '/browserconfig.xml';
+    document.getElementsByTagName('head')[0].appendChild(msapplicationConfig);
 
     var themeColor = document.createElement('meta');
     themeColor.name = 'theme-color';
