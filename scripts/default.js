@@ -3,19 +3,14 @@
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-  function externalLink() {
-
-    $.expr[':'].external = function(obj) {
-      return !obj.href.match(/^mailto\:/) && (obj.hostname != location.hostname);
-    };
-    $('a:external').addClass('external').attr('target', '_blank');
-  }
-
   function hiddenCode() {
 
     var kkeys = [];
     var konami = '38,38,40,40,37,39,37,39,66,65'; // up, up, down, down, left, right, left, right, b, a
     var sfii = '40,82,38,76,89,66,88,65'; // down, r, up, l, y, b, x, a
+
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
 
     $(document).keydown(function(e) {
       kkeys.push(e.keyCode);
@@ -62,6 +57,9 @@
       '1533954'  // Washing
     ),
     icon = something[Math.floor( Math.random() * something.length )];
+
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
 
     var appleTouchIcon = document.createElement('link');
     appleTouchIcon.rel = 'apple-touch-icon.png';
@@ -131,7 +129,13 @@
 
   function switchLanguage() {
 
-    $('*[href="#ca"]').click(function() {
+    $('*[href="#ca"], *[href="#en"], *[href="#es"], *[href="#jp"]').attr('role', 'button');
+
+    ////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////
+
+    $('*[href="#ca"]').click(function(e) {
+      e.preventDefault();
       $('html').attr('xml:lang', 'ca').attr('lang', 'ca');
       $('*[lang="ca"]').not('html').removeClass('hide').addClass('show');
       $('*[lang="en"], *[lang="es"], *[lang="jp"]').not('html').removeClass('show').addClass('hide');
@@ -140,7 +144,8 @@
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
 
-    $('*[href="#en"]').click(function() {
+    $('*[href="#en"]').click(function(e) {
+      e.preventDefault();
       $('html').attr('xml:lang', 'en').attr('lang', 'en');
       $('*[lang="en"]').not('html').removeClass('hide').addClass('show');
       $('*[lang="ca"], *[lang="es"], *[lang="jp"]').not('html').removeClass('show').addClass('hide');
@@ -149,7 +154,8 @@
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
 
-    $('*[href="#es"]').click(function() {
+    $('*[href="#es"]').click(function(e) {
+      e.preventDefault();
       $('html').attr('xml:lang', 'es').attr('lang', 'es');
       $('*[lang="es"]').not('html').removeClass('hide').addClass('show');
       $('*[lang="ca"], *[lang="en"], *[lang="jp"]').not('html').removeClass('show').addClass('hide');
@@ -158,44 +164,26 @@
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
 
-    $('*[href="#jp"]').click(function() {
+    $('*[href="#jp"]').click(function(e) {
+      e.preventDefault();
       $('html').attr('xml:lang', 'jp').attr('lang', 'jp');
       $('*[lang="jp"]').not('html').removeClass('hide').addClass('show');
       $('*[lang="ca"], *[lang="en"], *[lang="es"]').not('html').removeClass('show').addClass('hide');
     });
   };
 
-  function windowLocationHash() {
-
-    if (window.location.hash) {
-      var hash = window.location.hash.slice(1); // get the hash, and strip out the "#"
-      $('*[href="#' + hash + '"]').trigger('click');
-    };
-
-    $(window).on('hashchange', function() {
-      var hash = window.location.hash.slice(1); // get the hash, and strip out the "#"
-      $('*[href="#' + hash + '"]').trigger('click');
-    });
-};
-
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-jQuery(document).ready(function ($) {
+jQuery(document).ready(function($) {
 
-  externalLink();
   hiddenCode();
   randomFavicon();
   replacePilcrow();
   revealContent();
   switchLanguage();
-  windowLocationHash();
-
-  if (window.location.href === window.location.origin + '/') {
-    window.location.hash = '#en'; // Because english is the default language
-  }
 
   console.log('↑ ↑ ↓ ↓ ← → ← → b a');
 });
