@@ -94,12 +94,13 @@
     safariPinnedTab.color = '#000000';
     document.getElementsByTagName('head')[0].appendChild(safariPinnedTab);
 
-    // How to prevent the browser from asking for the favicon?
-    // https://stackoverflow.com/questions/4867206/how-to-prevent-the-browser-from-asking-for-the-favicon
+    // How to prevent favicon.ico requests?
+    // https://stackoverflow.com/questions/1321878/how-to-prevent-favicon-ico-requests
     var favicon = document.createElement('link');
-    favicon.rel = 'shortcut icon';
+    favicon.rel = 'icon';
+    favicon.type = 'image/png';
     // favicon.href = window.location.origin + '/laundry-care-symbols/' + icon + '/favicon.ico';
-    favicon.href = window.location.origin + '/empty';
+    favicon.href = 'data:image/png;base64,iVBORw0KGgo=';
     document.getElementsByTagName('head')[0].appendChild(favicon);
 
     var msapplicationTileColor = document.createElement('meta');
