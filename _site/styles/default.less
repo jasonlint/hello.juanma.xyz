@@ -63,21 +63,21 @@ html {
           > div {
 
             &[lang="jp"] {
-              font-family: 'Nitti Light'; .normal;
+              .NittiLight; .normal;
 
               a {
 
                 &:hover {
-                  font-family: 'Nitti Light Italic'; .normal;
+                  .NittiLightItalic; .normal;
                 }
 
                 &.external {
-                  font-family: 'Nitti Light', Courier, Menlo, monospace; .normal;
+                  .NittiLight; .normal;
                 }
               }
 
               em, i {
-                font-family: 'Nitti Light Italic'; .normal;
+                .NittiLightItalic; .normal;
               }
             }
           }
@@ -133,19 +133,19 @@ html {
 }
 
 ::-moz-selection {
-  background-color: @anotherBlue;
+  background-color: @Blue;
   color: @White;
 }
 
 ::selection {
-  background-color: @anotherBlue;
+  background-color: @Blue;
   color: @White;
 }
 
 .pilcrow {
 
   &:after {
-    color: @anotherBlue;
+    color: @Blue;
     content: "❚";
     display: inline-block;
   }
