@@ -10,3 +10,13 @@ github:
   repo:  https://github.com/aikijuanma/juanma.xyz
 timezone: Europe/Madrid
 markdown: kramdown
+
+exclude:
+  - node_modules
+  - scripts/default.js
+  - scripts/jquery-3.3.1.slim.js
+  - styles/base.less
+  - styles/default.less
+  - gulpfile.js
+  - package-lock.json
+  - package.json
