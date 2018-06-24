@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <link rel="preload" href="{{ site.url }}/styles/default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="{{ site.url }}/styles/default.min.css"></noscript>
+    <link rel="preload" href="{{ site.url }}/styles/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ site.url }}/styles/all.min.css"></noscript>
     <script>
-      {% include cssrelpreload.js %}
+      {% include cssrelpreload.min.js %}
     </script>
     <link rel="preload" href="{{ site.url }}/fonts/nitti-light-v40-webfont.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ site.url }}/fonts/nitti-lightitalic-v40-webfont.woff2" as="font" type="font/woff2" crossorigin>
