@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <link rel="preload" href="{{ site.url }}/styles/default.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="{{ site.url }}/styles/default.css"></noscript>
+    <link rel="preload" href="{{ site.url }}/styles/default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ site.url }}/styles/default.min.css"></noscript>
     <script>
       {% include cssrelpreload.js %}
     </script>
