@@ -7,19 +7,18 @@
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 
-@media (min-width: 320px)  { html { body { .page { .container-fluid { > main { padding: 16px * 2; } } } } } }
-@media (min-width: 768px)  { html { body { .page { .container-fluid { > main { padding: 16px * 4; } } } } } }
-@media (min-width: 1024px) { html { body { .page { .container-fluid { > main { padding: 16px * 6; } } } } } }
+@media (min-width: 320px)  { html { body { .page { .container { > main { padding: 16px * 2; } } } } } }
+@media (min-width: 768px)  { html { body { .page { .container { > main { padding: 16px * 4; } } } } } }
+@media (min-width: 1024px) { html { body { .page { .container { > main { padding: 16px * 6; } } } } } }
 
 html {
-  background-color: @White;
   height: 100%; width: 100%;
   margin: 0;
   min-height: 100%; min-width: 100%;
   padding: 0;
 
   body {
-    background-color: @White;
+    background-color: @Blue;
     height: 100%; width: 100%;
     margin: 0;
     padding: 0;
@@ -28,14 +27,21 @@ html {
 
       .page {
 
-        .container-fluid {
+        .container {
+          .vertical-align;
 
           > main {
             padding: 0;
 
-            img {
+            > a {
               .show;
-              height: auto; width: 100%;
+              position: relative;
+
+              img {
+                .show;
+                height: auto; width: 64%;
+                margin: 0 auto;
+              }
             }
           }
         }
@@ -47,7 +53,7 @@ html {
       height: 100%; width: 100%;
       z-index: 2;
 
-      .container-fluid {
+      .container {
         padding-right: 0; padding-left: 0;
 
         > main {
@@ -60,28 +66,6 @@ html {
           margin: 0 auto;
           position: relative;
 
-          > div {
-
-            &[lang="jp"] {
-              .NittiLight; .normal;
-
-              a {
-
-                &:hover {
-                  .NittiLightItalic; .normal;
-                }
-
-                &.external {
-                  .NittiLight; .normal;
-                }
-              }
-
-              em, i {
-                .NittiLightItalic; .normal;
-              }
-            }
-          }
-
           a {
             color: fade(@Black, 80%);
             position: relative;
@@ -92,30 +76,6 @@ html {
             &:hover {
               .NittiLightItalic;
               text-decoration: line-through;
-            }
-
-            &.external {
-              margin: 0 -2px;
-              padding: 0 2px; padding-right: 0.4em;
-
-              &:after {
-                background-repeat: no-repeat;
-                background-size: contain;
-                content: "↗";
-                display: inline-block;
-                height: auto; width: 0.4em;
-                position: absolute; bottom: 0.2em; right: 0em;
-                text-align: center;
-              }
-            }
-
-            &[href="https://hkps.pool.sks-keyservers.net/pks/lookup?op=get&search=0x5a7588238476115c"] {
-              margin: 0;
-              padding: 0; padding-right: 0;
-
-              &:after {
-                .hide;
-              }
             }
           }
 
