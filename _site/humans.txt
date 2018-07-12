@@ -24,7 +24,6 @@ SUPPORT
 Contact me for collaborations and work!
 
 TECHNOLOGY
-Bootstrap (getbootstrap.com)
 Cloudflare (cloudflare.com)
 GitHub (github.com)
 Hover (hover.com)
@@ -47,4 +46,4 @@ IMAGES
 Hannah Steller as photographed by her older brother, Dustin Steller, in the Kansas City area. The photo was originally uploaded to iStockphoto in August 2005.
 
 LICENSE
-GNU General Public License v3.0 (github.com/aikijuanma/juanma.xyz/blob/gh-pages/LICENSE)
+GNU General Public License v3.0 (github.com/aikijuanma/juanma.xyz/blob/master/LICENSE)
