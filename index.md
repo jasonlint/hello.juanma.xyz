@@ -1,6 +1,5 @@
 ---
 layout: default
-title: /dev/null
 date: 2017-09-27
 last_modified_at: 2018-10-05
 ---
