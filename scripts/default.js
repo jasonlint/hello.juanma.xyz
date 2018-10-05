@@ -7,7 +7,6 @@
 
     var kkeys = [];
     var konami = '38,38,40,40,37,39,37,39,66,65'; // up, up, down, down, left, right, left, right, b, a
-    var sfii = '40,82,38,76,89,66,88,65'; // down, r, up, l, y, b, x, a
 
     ////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////
@@ -15,9 +14,6 @@
     $(document).keydown(function(e) {
       kkeys.push(e.keyCode);
       if (kkeys.toString().indexOf(konami) >= 0) {
-        kkeys = [];
-        window.location.href = 'https://juanma.xxx';
-      } else if (kkeys.toString().indexOf(sfii) >= 0) {
         kkeys = [];
         window.location.href = 'https://eeeeeeeeeeeeee.ee';
       }
@@ -127,6 +123,16 @@
     $('.page').removeClass('hide').addClass('fadeIn');
   }
 
+  function deepLyonsBlue() {
+
+    $('.pilcrow').click(function() {
+      $('body').toggleClass('bbb-bg');
+      $('.page').toggleClass('aaa-bg');
+      $('.pilcrow').toggleClass('bbb');
+      $('main, main a').toggleClass('ccc');
+    });
+  }
+
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////
@@ -138,6 +144,7 @@ jQuery(document).ready(function($) {
   randomFavicon();
   replacePilcrow();
   revealContent();
+  deepLyonsBlue();
 
   console.log('↑ ↑ ↓ ↓ ← → ← → b a');
 });

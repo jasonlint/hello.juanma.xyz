@@ -51,6 +51,7 @@ html {
     .page {
       background-color: @White;
       height: 100%; width: 100%;
+      transition: background 0.4s ease;
       z-index: 2;
 
       .container {
@@ -103,12 +104,32 @@ html {
 }
 
 .pilcrow {
+  color: @Blue;
 
   &:after {
-    color: @Blue;
     content: "❚";
     display: inline-block;
   }
+}
+
+.ccc {
+  color: fade(@White, 80%) !important;
+}
+
+.aaa {
+  color: @Blue !important;
+}
+
+.bbb {
+  color: @White !important;
+}
+
+.aaa-bg {
+  background-color: @Blue !important;
+}
+
+.bbb-bg {
+  background-color: @White !important;
 }
 
 ////////////////////////////////////////////////////////////////

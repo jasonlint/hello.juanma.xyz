@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="robots" content="noindex, nofollow">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
     <link rel="preload" href="{{ site.url }}/styles/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="{{ site.url }}/styles/all.min.css"></noscript>
     <script>
@@ -14,6 +15,6 @@
     <link rel="preload" href="{{ site.url }}/fonts/nitti-light-v40-webfont.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ site.url }}/fonts/nitti-lightitalic-v40-webfont.woff2" as="font" type="font/woff2" crossorigin>
   </head>
-  <body {% if page.url != '/' %} warning="ERROR"{% endif %}>
+  <body class="体" {% if page.url != '/' %} warning="ERROR"{% endif %}>
     <div class="page hide">
       <div class="container">
