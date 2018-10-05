@@ -8417,6 +8417,8 @@ jQuery(document).ready(function($) {
   revealContent();
   deepLyonsBlue();
 
+  document.addEventListener('touchstart', onTouchStart, {passive: true});
+
   console.log('↑ ↑ ↓ ↓ ← → ← → b a');
 });
 
