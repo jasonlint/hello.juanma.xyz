@@ -8328,7 +8328,7 @@ return jQuery;
     ////////////////////////////////////////////////////////////////
 
     var appleTouchIcon = document.createElement('link');
-    appleTouchIcon.rel = 'apple-touch-icon.png';
+    appleTouchIcon.rel = 'apple-touch-icon';
     appleTouchIcon.sizes = '180x180';
     appleTouchIcon.href = window.location.origin + '/laundry-care-symbols/' + icon + '/apple-touch-icon.png';
     document.getElementsByTagName('head')[0].appendChild(appleTouchIcon);
@@ -8349,7 +8349,7 @@ return jQuery;
 
     var manifest = document.createElement('link');
     manifest.rel = 'manifest';
-    manifest.href = window.location.origin + '/laundry-care-symbols/' + icon + '/manifest.json';
+    manifest.href = window.location.origin + '/laundry-care-symbols/' + icon + '/site.webmanifest';
     document.getElementsByTagName('head')[0].appendChild(manifest);
 
     var safariPinnedTab = document.createElement('link');
@@ -8358,14 +8358,15 @@ return jQuery;
     safariPinnedTab.color = '#000000';
     document.getElementsByTagName('head')[0].appendChild(safariPinnedTab);
 
-    /*
-    var favicon = document.createElement('link');
-    favicon.rel = 'icon';
-    favicon.type = 'image/png';
-    favicon.href = window.location.origin + '/laundry-care-symbols/' + icon + '/favicon.ico';
-    favicon.href = 'data:image/png;base64,iVBORw0KGgo=';
-    document.getElementsByTagName('head')[0].appendChild(favicon);
-    */
+    var appleMobileWebAppTitle = document.createElement('meta');
+    appleMobileWebAppTitle.name = 'apple-mobile-web-app-title';
+    appleMobileWebAppTitle.content = '$&amp;@#%!';
+    document.getElementsByTagName('head')[0].appendChild(appleMobileWebAppTitle);
+
+    var applicationName = document.createElement('meta');
+    applicationName.name = 'application-name';
+    applicationName.content = '$&amp;@#%!';
+    document.getElementsByTagName('head')[0].appendChild(applicationName);
 
     var msapplicationTileColor = document.createElement('meta');
     msapplicationTileColor.name = 'msapplication-TileColor';
