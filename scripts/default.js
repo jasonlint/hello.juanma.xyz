@@ -124,7 +124,7 @@
     $('.page').removeClass('hide').addClass('fadeIn');
   }
 
-  function deepLyonsBlue() {
+  function blueIsTheWarmestColour() {
 
     $('.pilcrow').click(function() {
       $('body').toggleClass('bbb-bg');
@@ -145,7 +145,7 @@ jQuery(document).ready(function($) {
   randomFavicon();
   replacePilcrow();
   revealContent();
-  deepLyonsBlue();
+  blueIsTheWarmestColour();
 
   console.log('↑ ↑ ↓ ↓ ← → ← → b a');
 });
