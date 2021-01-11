@@ -15,18 +15,38 @@ On your https://poll.ma.pe/overlay/<id>/ URL add ?customCss=https://example.com/
 Please keep the link to https://poll.ma.pe visible for a short period of time.
 */
 
-@import url(https://fonts.googleapis.com/css?family=Abel);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: 'Road Rage';
+  src: url('the_mistermirror/RoadRage.woff2') format('woff2'),
+    url('the_mistermirror/RoadRage.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.bebasNeue {
+  font-family: 'Bebas Neue', cursive;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.roadRage {
+  font-family: 'Road Rage';
+  font-weight: normal;
+  font-style: normal;
+}
 
 /*
 * "custom" refers to the theme assigned to the poll element
 */
 .custom {
+  .bebasNeue;
 	background: #000;
 	width: 400px;
 	transition: opacity 1s;
 	padding: 10px;
-
-	font-family: Abel;
 
 	// Hide when not active
 	opacity: 0;
