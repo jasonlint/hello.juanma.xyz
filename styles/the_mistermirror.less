@@ -28,6 +28,7 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
   font-family: 'Bebas Neue', cursive;
   font-weight: normal;
   font-style: normal;
+  text-transform: uppercase;
 }
 
 .roadRage {
@@ -48,6 +49,10 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 
 .italic { font-style: italic; }
 .normal { font-style: normal; }
+
+@magenta: #fb66ff;
+@cyan: #57f9ff;
+@white: #ffffff;
 
 /*
 * "custom" refers to the theme assigned to the poll element
@@ -125,6 +130,7 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 	font-size: 15px;
 }
 .custom .options li.question {
+  .roadRage;
 	padding: 10px 20px;
 	white-space: normal;
 	background: blue;
@@ -132,6 +138,10 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 	line-height: 1.3;
 	font-size: 20px;
 	position: relative;
+
+  text-align: center;
+  color: @magenta;
+  text-shadow: 3px 4px 1px @white, -3px -6px 1px @cyan;
 }
 .custom .options li.help {
 	background: brown;
@@ -147,6 +157,8 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 	position: absolute;
 	top: 10px;
 	right: 15px;
+
+  color: @magenta;
 }
 .custom .options li .number {
 	padding: 5px 10px;
@@ -154,14 +166,18 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 	position: absolute;
 	top: 5px;
 	left: 10px;
+
+  .roadRage;
+  color: @magenta;
+  text-shadow: 3px 4px 1px @white, -3px -6px 1px @cyan;
 }
 .custom .options li .bar {
-	background: #444;
+	background: @cyan;
 	height: 5px;
 	margin-top: 5px;
 }
 .custom .options li .bar .bar-inner {
-	background: #fff;
+	background: @magenta;
 	height: 100%;
 	width: 0;
 	transition: width 1s;
@@ -169,6 +185,8 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 }
 .custom .options li .text {
 	line-height: 1.3;
+
+  colo: @cyan;
 }
 
 /*
