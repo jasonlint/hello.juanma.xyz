@@ -101,12 +101,17 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
 }
 .custom.finished .options li.highest,
 .custom.removing .options li.highest {
-  color: @cyan;
+  color: @magenta;
+  opacity: 1;
+}
+.custom.finished .options li.question,
+.custom.removing .options li.question {
   opacity: 1;
 }
 .custom.finished .options li.help,
 .custom.removing .options li.help {
   height: 0;
+  padding: 0;
 }
 .custom.active .options li.help {
   height: 36px;
