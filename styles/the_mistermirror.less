@@ -68,6 +68,7 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
   border: 5px solid @cyan;
   border-top-width: 24px;
   z-index: -9 !important;
+  box-shadow: 4px 3px 1px @white, -4px 6px 1px @magenta;
 }
 
 /*
@@ -181,12 +182,15 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
   font-size: 36px;
 
   &:before {
+    content: '';
     display: block;
     position: absolute;
     transform: rotate(67.5deg) skewX(45deg) scaleY( cos(45deg));
     height: 32px;
     width: 32px;
     background-color: @cyan;
+    top: 0;
+    left: 0;
   }
 }
 
