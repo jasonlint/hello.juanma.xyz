@@ -186,22 +186,17 @@ Please keep the link to https://poll.ma.pe visible for a short period of time.
   text-shadow: 2px 2px 1px @white, -2px -2px 1px @cyan;
   font-size: 36px;
 
-  width: 0;
-  height: 0;
-  border: 36px solid transparent;
-  border-bottom-color: @cyan;
-  position: relative;
-  top: -50px;
-
-  &:after {
+  &:before {
     content: '';
+    display: block;
     position: absolute;
-    left: -50px;
-    top: 50px;
-    width: 0;
-    height: 0;
-    border: 36px solid transparent;
-    border-top-color: @cyan;
+    transform: rotate(44deg) skewX(0deg) scaleY( cos(1deg));
+    height: 36px;
+    width: 36px;
+    background-color: @cyan;
+    top: 0;
+    left: 0;
+    z-index: -9;
   }
 }
 
