@@ -15,7 +15,7 @@
       kkeys.push(e.keyCode);
       if (kkeys.toString().indexOf(konami) >= 0) {
         kkeys = [];
-        window.location.href = 'https://eeeeeeeeeeeeee.ee';
+        window.location.href = 'https://tonymoly.us/collections/cats-purrfect';
       }
     });
   }
